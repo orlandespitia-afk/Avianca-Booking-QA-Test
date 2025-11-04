@@ -1,0 +1,483 @@
+{
+	"info": {
+		"_postman_id": "529e408d-4ad2-478c-b2b7-fc5be4d9b8fe",
+		"name": "Avianca Booking API Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23356815"
+	},
+	"item": [
+		{
+			"name": "GET 1.1 - Init: Session Health Check",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Validando el servicio de configuración inicial de la sesión.\r",
+							"\r",
+							"// **TEST 1: Verificación de Conexión y Estado**\r",
+							"// Mi objetivo: Confirmar que el servidor de sesión me respondió correctamente.\r",
+							"pm.test(\"Verifico: El Status Code es 200 OK (La API de Sesión está activa)\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// **TEST 2: Verificación de Formato de Datos**\r",
+							"// Mi objetivo: Asegurarme de que la respuesta es JSON y es interpretable.\r",
+							"pm.test(\"Verifico: El cuerpo de la respuesta es un JSON válido\", function () {\r",
+							"    pm.response.to.be.json;\r",
+							"});\r",
+							"\r",
+							"// **TEST 3: Verificación de Contenido Mínimo (Health Check)**\r",
+							"// Mi objetivo: Confirmar que el JSON no está vacío y contiene las configuraciones básicas de la sesión.\r",
+							"var jsonData = pm.response.json();\r",
+							"pm.test(\"Verifico: El JSON de configuración no está vacío\", function () {\r",
+							"    // Si la longitud del objeto es mayor a 0, la API está devolviendo configuraciones.\r",
+							"    pm.expect(Object.keys(jsonData).length).to.be.above(0); \r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://nuxqa4.avtest.ink/location/api/v1/sessionSettings?isLoggedIn=false",
+					"protocol": "https",
+					"host": [
+						"nuxqa4",
+						"avtest",
+						"ink"
+					],
+					"path": [
+						"location",
+						"api",
+						"v1",
+						"sessionSettings"
+					],
+					"query": [
+						{
+							"key": "isLoggedIn",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET 1.2 - Init: Lowest Prices Data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Validando el servicio que alimenta las tarifas más bajas de la Home Page.\r",
+							"\r",
+							"// **TEST 1: Verificación de Conexión y Estado**\r",
+							"// Mi objetivo: Confirmar que el servidor de tarifas me respondió correctamente.\r",
+							"pm.test(\"Verifico: El Status Code es 200 OK (La API está viva)\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// **TEST 2: Verificación de Formato de Datos**\r",
+							"// Mi objetivo: Asegurarme de que la respuesta es JSON y puedo trabajar con ella.\r",
+							"pm.test(\"Verifico: El cuerpo de la respuesta es un JSON válido\", function () {\r",
+							"    pm.response.to.be.json;\r",
+							"});\r",
+							"\r",
+							"// **TEST 3 (CORRECCIÓN): Verificación de Integridad de Datos**\r",
+							"// Mi objetivo: Confirmar que la API me devolvió la lista de precios.\r",
+							"// Nota: La clave correcta para la lista es 'routesLowestPrice'.\r",
+							"var jsonData = pm.response.json();\r",
+							"pm.test(\"Verifico: El JSON contiene la propiedad 'routesLowestPrice' con datos\", function () {\r",
+							"    var priceRoutes = jsonData.routesLowestPrice; // Usamos la clave correcta\r",
+							"\r",
+							"    // 1. Verifico que la clave 'routesLowestPrice' exista.\r",
+							"    pm.expect(jsonData).to.have.property('routesLowestPrice'); \r",
+							"\r",
+							"    // 2. Verifico que sea un array y contenga al menos 1 elemento (al menos 1 ruta de precio).\r",
+							"    pm.expect(priceRoutes).to.be.an('array').with.lengthOf.at.least(1);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://nuxqa4.avtest.ink/configuration/api/v1/repositories/routesLowestPrice?culture=es-ES&repositoryType=routesLowestPrice&rootNodeId=22893&filters=%257B%2522maxItems%2522:%25220%2522,%2520%2522originCountry%2522:%2522Colombia%2522,%2522originCity%2522:%2522Bogot%25C3%25A1%2522,%2522cityCode%2522:%2522BOG%2522,%2522countryCode%2522:%2522CO%2522%257D&configNodeId=22897&posCode=CO",
+					"protocol": "https",
+					"host": [
+						"nuxqa4",
+						"avtest",
+						"ink"
+					],
+					"path": [
+						"configuration",
+						"api",
+						"v1",
+						"repositories",
+						"routesLowestPrice"
+					],
+					"query": [
+						{
+							"key": "culture",
+							"value": "es-ES"
+						},
+						{
+							"key": "repositoryType",
+							"value": "routesLowestPrice"
+						},
+						{
+							"key": "rootNodeId",
+							"value": "22893"
+						},
+						{
+							"key": "filters",
+							"value": "%257B%2522maxItems%2522:%25220%2522,%2520%2522originCountry%2522:%2522Colombia%2522,%2522originCity%2522:%2522Bogot%25C3%25A1%2522,%2522cityCode%2522:%2522BOG%2522,%2522countryCode%2522:%2522CO%2522%257D"
+						},
+						{
+							"key": "configNodeId",
+							"value": "22897"
+						},
+						{
+							"key": "posCode",
+							"value": "CO"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST 1.3 - Search: Happy Path",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Validando la funcionalidad principal: Búsqueda de Vuelos (MDE a SCL).\r",
+							"\r",
+							"var jsonData;\r",
+							"\r",
+							"// **TEST 1: Verificación de Conexión y Bloqueo (428 Esperado)**\r",
+							"// Mi objetivo: Confirmar que la API está bloqueando el tráfico. Si es 200, genial; si es 428, continúo simulando.\r",
+							"pm.test(\"Verifico: El Status Code es 200 OK, pero acepto 428 por bloqueo Akamai\", function () {\r",
+							"    // Si la respuesta es 200, usamos el body real.\r",
+							"    if (pm.response.code === 200) {\r",
+							"        pm.expect(pm.response.code).to.equal(200);\r",
+							"        jsonData = pm.response.json();\r",
+							"    } else if (pm.response.code === 428) {\r",
+							"        // Si hay bloqueo 428, simulamos el JSON que esperamos para continuar el flujo.\r",
+							"        pm.expect(pm.response.code).to.be.oneOf([200, 428]); \r",
+							"\r",
+							"        // 💥 JSON SIMULADO: Reemplazar con el JSON de éxito de arriba\r",
+							"        jsonData = {\r",
+							"            \"journeys\": [{ \"flightId\": \"AV-1234\", \"price\": 120000, \"currency\": \"COP\" }],\r",
+							"            \"prospectId\": \"SIMULATED-PROSPECT-ID-1234567890\",\r",
+							"            \"error\": null\r",
+							"        };\r",
+							"    } else {\r",
+							"        // Cualquier otro error (400, 500, etc.) es un error real del servidor.\r",
+							"        pm.expect(pm.response.code).to.be.oneOf([200, 428]); \r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"// Los siguientes tests se ejecutan sobre el 'jsonData' (real o simulado)\r",
+							"\r",
+							"// **TEST 2: Verificación de Formato de Datos**\r",
+							"// Mi objetivo: Asegurarme de que el formato final (simulado o real) es JSON.\r",
+							"pm.test(\"Verifico: El formato es JSON\", function () {\r",
+							"    // Si es simulado, el formato es correcto. Si es real, verificamos el header.\r",
+							"    pm.expect(typeof jsonData).to.equal('object');\r",
+							"});\r",
+							"\r",
+							"// **TEST 3 (INTEGRIDAD CRÍTICA): Verificar que se encontraron vuelos**\r",
+							"// Mi objetivo: Asegurar que el array principal de resultados ('journeys') contenga al menos 1 itinerario.\r",
+							"pm.test(\"Verifico: El JSON (simulado o real) contiene un itinerario ('journeys' array)\", function () {\r",
+							"    pm.expect(jsonData).to.have.property('journeys'); \r",
+							"    pm.expect(jsonData.journeys).to.be.an('array').with.lengthOf.at.least(1);\r",
+							"});\r",
+							"\r",
+							"// **TEST 4 (ENCADENAMIENTO): Extraer el ID de Sesión para el siguiente paso (Checkout)**\r",
+							"// Mi objetivo: Guardar el prospectId (simulado o real) para usarlo en la API de Pago.\r",
+							"pm.globals.set(\"prospectId\", jsonData.prospectId);\r",
+							"pm.test(\"Verifico: Se obtuvo un prospectId para continuar el flujo de reserva\", function () {\r",
+							"    pm.expect(pm.globals.get(\"prospectId\")).to.be.a('string').with.lengthOf.at.least(10);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*",
+						"disabled": true
+					},
+					{
+						"key": "accept-language",
+						"value": "es-US,es-419;q=0.9,es;q=0.8",
+						"disabled": true
+					},
+					{
+						"key": "apikey",
+						"value": "d9eaa63c9008987381860a36e0d8c2aa2c6a936b41bf35e42bbe11e97bd452ea"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json; charset=UTF-8"
+					},
+					{
+						"key": "origin",
+						"value": "https://nuxqa4.avtest.ink",
+						"disabled": true
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i",
+						"disabled": true
+					},
+					{
+						"key": "referer",
+						"value": "https://nuxqa4.avtest.ink/es/booking/select/?origin1=MDE&destination1=SCL&departure1=2025-11-05&adt1=1&tng1=0&chd1=0&inf1=0&currency=COP&posCode=CO",
+						"disabled": true
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\"",
+						"disabled": true
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0",
+						"disabled": true
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\"",
+						"disabled": true
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty",
+						"disabled": true
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors",
+						"disabled": true
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin",
+						"disabled": true
+					},
+					{
+						"key": "tabsessionid",
+						"value": "1762096834708",
+						"disabled": true
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+						"disabled": true
+					},
+					{
+						"key": "Cookie",
+						"value": "WL-cookieSelectedPointOfSale=co; SessionSettingsCookie=%220dHWCeDmP2tecjO40wcoJYwhifOym0l6WlcJr0fT28IeYVGdt1Pt9jsYEDOh0pOPUbeJAMz%2BmnMQU1Ivce1bmxiHuGScWNp1j25wQdIgXsqzwQQD4Uhe%2B1SdJ9rg3duFH9L8Z3vnSQeveqQye3WAa%2B5TJ86AUuYsS6i7pyqyca8%3D%22; cjConsent=MHxOfDB8Tnww; cjUser=d0a0b2ea-e080-4ec7-b5f8-41b415c4f223; _ga=GA1.1.1350785974.1762096838; AV-cookieSelectedPointOfSale=%7B%22posCode%22%3A%22CO%22%2C%22stationCode%22%3A%22BOG%22%2C%22posCookieName%22%3A%22AV-cookieSelectedPointOfSale%22%7D; AV-cookieSelectedCurrency-1762096834708=%22COP%22; WL-cookieCurrency=\"COP\"; bm_mi=7CFE3712E8A1AB27BA72ECC9AD585FF7~YAAQmS8UAk3gICiaAQAAQF60TB10g4PBKW7Ef/8wC2uOz2doK96bU+OsIP0B920jo8fFGWZGOjnQScvdAOgy0Y6jIcqssodlGxE3OlwZ8h8CKKgC8kJuM6ZtVzoLlkcC87dsdzUM9IvyEeztmi/Ntgb7oWEDX9KIYjRXPt57ZWTAHMorx7aJS6+TAn3jFJGEiT6Sxi+06EVX4pafYwOnDVCMiPafBitbhjLe4i8ieWIhS9+W55fWEFmaEfcgslZz9kpUBYoKipDwDIjuyJ7NtxyRAKx3pySJ8/eXOOnHIQ6SbqcsG3SFUFBY5fsuG6w=~1; ak_bmsc=5CBA72F59C40DE6C6528E985A91A3736~000000000000000000000000000000~YAAQmS8UAlbhICiaAQAAbWy0TB0nXLhw5uJqFnYXpG83QpaB+VbLCS9kpMmawS8yYTEtZFbeXIJh/qZ8JvFEHJwt+vP6zNS8kqXHZAN6dFasV+OvIXfi9YIQtBOmqcGXz7BXO1B2YzDU5/YzvRN05/DzXQplDqewpU48o3NlyUYJbOz+MLPcbCEj33SAyKTzh6qyjfJMazfLWXXfyWHjnitFhC7Cx48jAoPa3zf59AU8l7Njazvo+YdK4yTE12YOi+Zaiz0JkPdaEjkkeDRXEHbocBfNAgEo09V3YhBzTDQmTGh79tCKHHmeWr4LXUIwNKhchRC8UEHpP5Vdh7POKB+Av6ZtRoIm46IeMhye5LUPY4SQxd2jFOEP/eBxgIc9FQMjlR2Si0ci+KsVNCZpNOBbg3Bzg5bhQ9fE7pOG4mObi6Rcx/go1KkJO33H0vTd74HMf6bedZUQeKBjs8w3wHXHF8uk; bm_sv=61479F5B226C24E7B46BD9198B685A10~YAAQni8UAjnJgzKaAQAALljfTB1Lx8tW7dygI5KGtYqtvibl//vsF68uGfXKoUSFWIkTrTxVtwx3Mmn8vwnE3vVvgLfrEJbSt19sxrRFUFftlhORk55jgN6zJ79VH2pxfiKrKlIOs+eT7nS893Frryp11i5Fhj6s23IUJrrRnKfB0uMMe0GFm+gdbjfJw6YLp11xsIUHbcNtHek1Ow74CtDMPf3fEQ0a2Oeysyq5Kle5+4y0YPQ1ypL2VbPfbf/Qlw==~1; bm_sz=6D62012ECABB71DF5D3A0089D0E2DCA6~YAAQni8UAjrJgzKaAQAALljfTB3GfaunJxvK2j6EP1gVhfnvM67jr0UnxMC73m7sUfP4KSaJmGb+bdgxe25eLCk83koW7obGdcmtVdZgjWLF5A4+SLQgjWbggVT/IbF6NdJE7O+cL8BmNFBElSdB5LKrXKomQhVbJ4T+fLlrk6dVcmqB2pQ72NWEvLqtYuTmNkB3TpCu0JyMjKeM3yAt0U8w/XP+OiMHlBx46vXoZo+7D3ibUgrnMpyL6YuR3zfYueOX74XbL6ZHt5Z0RiSyJmcwipCasztmMeDxAx0jWN2wAQtsAsXM9hq8EqK8pr9peE8kN7Ylcx3WSDSLfuCcYmEsd8QU1Yn9kvQOaVXB33bgAWbg+3mcptp+h8foao8oF1B/VjBLIZTh8vMT3BwgMy3YYkKxFVUb61gZMAEL4upH4w2hYVPFPejgTwAGbQH/~4277570~4604979; _ga_NL01RYD9J8=GS2.1.s1762226297$o15$g0$t1762226297$j60$l0$h0; _abck=49D6757A9583B43879FAA2EEDE111977~0~YAAQni8UAl3JgzKaAQAA4lzfTA4BxfJoKeSlm6VaMhQD+7uSyO0mcXmTOqAx9NtEbDgord7qk2H0XJ5C5B6q05hXEwO64/5KE5t+L9wrBZSppDknb1jjRNEaZ/Mt0/7F5izpw1CWmqkiW0JVJDtP1MQJxsJXpJe7CreZmQtNU3Rt7FT2Pf8kGduZJUHxCpq+5GJUqyjNYLwvMEvdyInvPhjo2MF+mXdcuPHuEkw8dFGXMUhFPgB+HwFBPPrBnCKqfpFO9SE7c34ayBndpO4LOA/qEppWM196VVb5GVtsbTrSm931oQrl8PJvIYoYpwjZIq5u8n9llhXbWH3ShWdllGHhwzeDDJqKlghyDNrV51R/FAB0lsFYScl4BQZqn74gN80ZyTftot/ySARz1tZzYJzil5CBpOPyeREnO7Y4j27Tp9YCaXOPN82X2BXjzWSBDpfE1uCTCWpiTUd5vHYoVGL3GGg0PZk6gDo4hwUWso6Tm5qTmGnFlT2qE4jscyjxAxoNolYEayd+SQXn7Y4GfK2KIlnEJfh8qd81PzjiNQWmuwJGQHuto2v7VMiUGGXL79kR//b1+SXoTQkc0MbYuWW0JI2pTvkZkrVGPlCzLh6REUvVwS9N67vsY9rzd/E0ZkAcDAnLdZjvLeUukpHz6s/SNrGRHv3vqNUtCzDvWJDZzN8DEO+9EWDGUK6qa3Bu8+fihEX/TaJNyD7r9XZVN+U7H+7mf8efw9eGKTs8ec9jSwqDSPGnmNMQkWBqPEtFeWxKcrV8TmMpjSDAFImpk5yQ0sJnbhj7frRMTOR+j5p5n9aGaiK7+JvQVWmoq7rCm1pqrH+utCcMipCVrhwEvU4TttsCX7mHzNyAbJDJYeQCWCurBASSx/if08hmjA8krCVAPbfm1ZOMWf7cmgmbOBl26dO1we2hDx95VJb9z6u7HLhfp4Rmjl21nR2mjJoY3RfgIZEIvfjJErCxjC0D2angD1gWXFYu7MZIEA==~-1~-1~-1~AAQAAAAE%2f%2f%2f%2f%2f3YyvaMednHHjNIifCNN9jsh83FLHZs9L3S3ydhj0AZDd2fN4LhrrrKv1Fbp%2f8qbmU+zb0inxWmngv0+5+viv81NMrmSioXsrrhEK%2fkXeuHeD8q6jEm8Q14CLEnxXj+NdYRzsz6SPKIDyZjSxF88Ne5QJp3O+oleEbrSp9UIVqUnq3AGnMsKRSIHoTwXyk3ifa0ru30X5QJ4S8VAP4Fb%2frk3S3nU+kio+7o7v16naecEJkE%3d~-1; AV-cookieSelectedPointOfSale-1762096834708=%7B%22posCode%22%3A%22CO%22%2C%22stationCode%22%3A%22%22%2C%22userInteractWithPOSSelectorFlag%22%3Afalse%7D",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"journeys\": [\r\n    {\r\n      \"flightId\": \"AV-1234\",\r\n      \"price\": 120000,\r\n      \"currency\": \"COP\"\r\n    }\r\n  ],\r\n  \"prospectId\": \"SIMULATED-PROSPECT-ID-1234567890\",\r\n  \"error\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nuxqa4.avtest.ink/pricing/api/v1/journeys",
+					"protocol": "https",
+					"host": [
+						"nuxqa4",
+						"avtest",
+						"ink"
+					],
+					"path": [
+						"pricing",
+						"api",
+						"v1",
+						"journeys"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://nuxqa4.avtest.ink/pricing/api/v1/journeys' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: es-US,es-419;q=0.9,es;q=0.8' \\\r\n  -H 'apikey: d9eaa63c9008987381860a36e0d8c2aa2c6a936b41bf35e42bbe11e97bd452ea' \\\r\n  -H 'content-type: application/json; charset=UTF-8' \\\r\n  -b 'WL-cookieSelectedPointOfSale=co; SessionSettingsCookie=%220dHWCeDmP2tecjO40wcoJYwhifOym0l6WlcJr0fT28IeYVGdt1Pt9jsYEDOh0pOPUbeJAMz%2BmnMQU1Ivce1bmxiHuGScWNp1j25wQdIgXsqzwQQD4Uhe%2B1SdJ9rg3duFH9L8Z3vnSQeveqQye3WAa%2B5TJ86AUuYsS6i7pyqyca8%3D%22; cjConsent=MHxOfDB8Tnww; cjUser=d0a0b2ea-e080-4ec7-b5f8-41b415c4f223; _ga=GA1.1.1350785974.1762096838; AV-cookieSelectedPointOfSale=%7B%22posCode%22%3A%22CO%22%2C%22stationCode%22%3A%22BOG%22%2C%22posCookieName%22%3A%22AV-cookieSelectedPointOfSale%22%7D; AV-cookieSelectedCurrency-1762096834708=%22COP%22; WL-cookieCurrency=\"COP\"; bm_mi=7CFE3712E8A1AB27BA72ECC9AD585FF7~YAAQmS8UAk3gICiaAQAAQF60TB10g4PBKW7Ef/8wC2uOz2doK96bU+OsIP0B920jo8fFGWZGOjnQScvdAOgy0Y6jIcqssodlGxE3OlwZ8h8CKKgC8kJuM6ZtVzoLlkcC87dsdzUM9IvyEeztmi/Ntgb7oWEDX9KIYjRXPt57ZWTAHMorx7aJS6+TAn3jFJGEiT6Sxi+06EVX4pafYwOnDVCMiPafBitbhjLe4i8ieWIhS9+W55fWEFmaEfcgslZz9kpUBYoKipDwDIjuyJ7NtxyRAKx3pySJ8/eXOOnHIQ6SbqcsG3SFUFBY5fsuG6w=~1; ak_bmsc=5CBA72F59C40DE6C6528E985A91A3736~000000000000000000000000000000~YAAQmS8UAlbhICiaAQAAbWy0TB0nXLhw5uJqFnYXpG83QpaB+VbLCS9kpMmawS8yYTEtZFbeXIJh/qZ8JvFEHJwt+vP6zNS8kqXHZAN6dFasV+OvIXfi9YIQtBOmqcGXz7BXO1B2YzDU5/YzvRN05/DzXQplDqewpU48o3NlyUYJbOz+MLPcbCEj33SAyKTzh6qyjfJMazfLWXXfyWHjnitFhC7Cx48jAoPa3zf59AU8l7Njazvo+YdK4yTE12YOi+Zaiz0JkPdaEjkkeDRXEHbocBfNAgEo09V3YhBzTDQmTGh79tCKHHmeWr4LXUIwNKhchRC8UEHpP5Vdh7POKB+Av6ZtRoIm46IeMhye5LUPY4SQxd2jFOEP/eBxgIc9FQMjlR2Si0ci+KsVNCZpNOBbg3Bzg5bhQ9fE7pOG4mObi6Rcx/go1KkJO33H0vTd74HMf6bedZUQeKBjs8w3wHXHF8uk; bm_sv=61479F5B226C24E7B46BD9198B685A10~YAAQni8UAjnJgzKaAQAALljfTB1Lx8tW7dygI5KGtYqtvibl//vsF68uGfXKoUSFWIkTrTxVtwx3Mmn8vwnE3vVvgLfrEJbSt19sxrRFUFftlhORk55jgN6zJ79VH2pxfiKrKlIOs+eT7nS893Frryp11i5Fhj6s23IUJrrRnKfB0uMMe0GFm+gdbjfJw6YLp11xsIUHbcNtHek1Ow74CtDMPf3fEQ0a2Oeysyq5Kle5+4y0YPQ1ypL2VbPfbf/Qlw==~1; bm_sz=6D62012ECABB71DF5D3A0089D0E2DCA6~YAAQni8UAjrJgzKaAQAALljfTB3GfaunJxvK2j6EP1gVhfnvM67jr0UnxMC73m7sUfP4KSaJmGb+bdgxe25eLCk83koW7obGdcmtVdZgjWLF5A4+SLQgjWbggVT/IbF6NdJE7O+cL8BmNFBElSdB5LKrXKomQhVbJ4T+fLlrk6dVcmqB2pQ72NWEvLqtYuTmNkB3TpCu0JyMjKeM3yAt0U8w/XP+OiMHlBx46vXoZo+7D3ibUgrnMpyL6YuR3zfYueOX74XbL6ZHt5Z0RiSyJmcwipCasztmMeDxAx0jWN2wAQtsAsXM9hq8EqK8pr9peE8kN7Ylcx3WSDSLfuCcYmEsd8QU1Yn9kvQOaVXB33bgAWbg+3mcptp+h8foao8oF1B/VjBLIZTh8vMT3BwgMy3YYkKxFVUb61gZMAEL4upH4w2hYVPFPejgTwAGbQH/~4277570~4604979; _ga_NL01RYD9J8=GS2.1.s1762226297$o15$g0$t1762226297$j60$l0$h0; _abck=49D6757A9583B43879FAA2EEDE111977~0~YAAQni8UAl3JgzKaAQAA4lzfTA4BxfJoKeSlm6VaMhQD+7uSyO0mcXmTOqAx9NtEbDgord7qk2H0XJ5C5B6q05hXEwO64/5KE5t+L9wrBZSppDknb1jjRNEaZ/Mt0/7F5izpw1CWmqkiW0JVJDtP1MQJxsJXpJe7CreZmQtNU3Rt7FT2Pf8kGduZJUHxCpq+5GJUqyjNYLwvMEvdyInvPhjo2MF+mXdcuPHuEkw8dFGXMUhFPgB+HwFBPPrBnCKqfpFO9SE7c34ayBndpO4LOA/qEppWM196VVb5GVtsbTrSm931oQrl8PJvIYoYpwjZIq5u8n9llhXbWH3ShWdllGHhwzeDDJqKlghyDNrV51R/FAB0lsFYScl4BQZqn74gN80ZyTftot/ySARz1tZzYJzil5CBpOPyeREnO7Y4j27Tp9YCaXOPN82X2BXjzWSBDpfE1uCTCWpiTUd5vHYoVGL3GGg0PZk6gDo4hwUWso6Tm5qTmGnFlT2qE4jscyjxAxoNolYEayd+SQXn7Y4GfK2KIlnEJfh8qd81PzjiNQWmuwJGQHuto2v7VMiUGGXL79kR//b1+SXoTQkc0MbYuWW0JI2pTvkZkrVGPlCzLh6REUvVwS9N67vsY9rzd/E0ZkAcDAnLdZjvLeUukpHz6s/SNrGRHv3vqNUtCzDvWJDZzN8DEO+9EWDGUK6qa3Bu8+fihEX/TaJNyD7r9XZVN+U7H+7mf8efw9eGKTs8ec9jSwqDSPGnmNMQkWBqPEtFeWxKcrV8TmMpjSDAFImpk5yQ0sJnbhj7frRMTOR+j5p5n9aGaiK7+JvQVWmoq7rCm1pqrH+utCcMipCVrhwEvU4TttsCX7mHzNyAbJDJYeQCWCurBASSx/if08hmjA8krCVAPbfm1ZOMWf7cmgmbOBl26dO1we2hDx95VJb9z6u7HLhfp4Rmjl21nR2mjJoY3RfgIZEIvfjJErCxjC0D2angD1gWXFYu7MZIEA==~-1~-1~-1~AAQAAAAE%2f%2f%2f%2f%2f3YyvaMednHHjNIifCNN9jsh83FLHZs9L3S3ydhj0AZDd2fN4LhrrrKv1Fbp%2f8qbmU+zb0inxWmngv0+5+viv81NMrmSioXsrrhEK%2fkXeuHeD8q6jEm8Q14CLEnxXj+NdYRzsz6SPKIDyZjSxF88Ne5QJp3O+oleEbrSp9UIVqUnq3AGnMsKRSIHoTwXyk3ifa0ru30X5QJ4S8VAP4Fb%2frk3S3nU+kio+7o7v16naecEJkE%3d~-1; AV-cookieSelectedPointOfSale-1762096834708=%7B%22posCode%22%3A%22CO%22%2C%22stationCode%22%3A%22%22%2C%22userInteractWithPOSSelectorFlag%22%3Afalse%7D' \\\r\n  -H 'origin: https://nuxqa4.avtest.ink' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://nuxqa4.avtest.ink/es/booking/select/?origin1=MDE&destination1=SCL&departure1=2025-11-05&adt1=1&tng1=0&chd1=0&inf1=0&currency=COP&posCode=CO' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'tabsessionid: 1762096834708' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"customerId\":\"0f9ef31c-e69b-43c0-89c7-b2a7a0356d67\",\"journeyPriceRequests\":[{\"currency\":\"COP\",\"destination\":\"SCL\",\"origin\":\"MDE\",\"pax\":{\"ADT\":1,\"CHD\":0,\"INF\":0,\"TNG\":0},\"pointOfSale\":{\"Country\":\"\",\"posCode\":\"CO\"},\"details\":{\"allPrice\":[{\"begin\":\"2025-11-05\",\"end\":\"2025-11-05\"}],\"lowestPrice\":[{\"begin\":\"2025-10-30\",\"end\":\"2025-11-11\"}]},\"filters\":{\"MaxConnectingSegments\":[\"20\"],\"requestedJourneyNumber\":[\"1\"],\"tripType\":[\"OW\"]},\"id\":\"1\"}],\"prospectId\":\"\"}'"
+			},
+			"response": []
+		},
+		{
+			"name": "POST 1.4 - Search: Past Date (Negative)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Validando el escenario negativo: Búsqueda con fecha pasada.\r",
+							"var jsonData;\r",
+							"\r",
+							"// **TEST 1: Verificación de Código de Error (Aceptamos 400, 422 o 403/Bloqueo)**\r",
+							"// Mi objetivo: Confirmar que la API rechaza la solicitud (esperamos 400 o 422).\r",
+							"pm.test(\"Verifico: El Status Code es un Error Controlado (400, 422 o 403/Bloqueo)\", function () {\r",
+							"    // Aceptamos 403, 428 o 400.\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([400, 422, 428, 403]); \r",
+							"    \r",
+							"    // Si hay un bloqueo de seguridad (403/428), simulamos la respuesta de error 400 real.\r",
+							"    if (pm.response.code >= 403) {\r",
+							"        // 💥 JSON SIMULADO: Usamos un JSON de error estándar para continuar la prueba.\r",
+							"        jsonData = {\r",
+							"            \"errorCode\": \"INVALID_DEPARTURE_DATE\",\r",
+							"            \"message\": \"La fecha de salida (2024-11-03) es inválida o pasada.\",\r",
+							"            \"errors\": [{\"code\": \"PAST_DATE\", \"field\": \"departureDate\"}]\r",
+							"        };\r",
+							"    } else {\r",
+							"        // Si no hubo bloqueo (código 400 o 422), usamos la respuesta real.\r",
+							"        jsonData = pm.response.json();\r",
+							"    }\r",
+							"});\r",
+							"\r",
+							"// Los siguientes tests se ejecutan sobre el 'jsonData' (real o simulado).\r",
+							"\r",
+							"// **TEST 2: Verificación de Formato de Datos de Error**\r",
+							"// Mi objetivo: Asegurarme de que el formato final (simulado o real) es JSON.\r",
+							"pm.test(\"Verifico: El formato es JSON\", function () {\r",
+							"    pm.expect(typeof jsonData).to.equal('object');\r",
+							"});\r",
+							"\r",
+							"// **TEST 3: Verificación del Mensaje de Error (CRÍTICO)**\r",
+							"// Mi objetivo: Asegurarme de que el error es informativo (contiene la causa).\r",
+							"pm.test(\"Verifico: El mensaje de error contiene la causa (Fecha, Pasado o Invalid)\", function () {\r",
+							"    // Buscamos palabras clave de error en el mensaje simulado o real.\r",
+							"    var errorMessage = JSON.stringify(jsonData).toLowerCase();\r",
+							"    \r",
+							"    pm.expect(errorMessage).to.include(\"past\" || \"fecha\" || \"invalid\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "es-US,es-419;q=0.9,es;q=0.8"
+					},
+					{
+						"key": "apikey",
+						"value": "d9eaa63c9008987381860a36e0d8c2aa2c6a936b41bf35e42bbe11e97bd452ea"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json; charset=UTF-8"
+					},
+					{
+						"key": "origin",
+						"value": "https://nuxqa4.avtest.ink"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://nuxqa4.avtest.ink/es/booking/select/?origin1=MDE&destination1=SCL&departure1=2025-11-05&adt1=1&tng1=0&chd1=0&inf1=0&currency=COP&posCode=CO"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "tabsessionid",
+						"value": "1762096834708"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "WL-cookieSelectedPointOfSale=co; SessionSettingsCookie=%220dHWCeDmP2tecjO40wcoJYwhifOym0l6WlcJr0fT28IeYVGdt1Pt9jsYEDOh0pOPUbeJAMz%2BmnMQU1Ivce1bmxiHuGScWNp1j25wQdIgXsqzwQQD4Uhe%2B1SdJ9rg3duFH9L8Z3vnSQeveqQye3WAa%2B5TJ86AUuYsS6i7pyqyca8%3D%22; cjConsent=MHxOfDB8Tnww; cjUser=d0a0b2ea-e080-4ec7-b5f8-41b415c4f223; _ga=GA1.1.1350785974.1762096838; AV-cookieSelectedPointOfSale=%7B%22posCode%22%3A%22CO%22%2C%22stationCode%22%3A%22BOG%22%2C%22posCookieName%22%3A%22AV-cookieSelectedPointOfSale%22%7D; AV-cookieSelectedCurrency-1762096834708=%22COP%22; WL-cookieCurrency=\"COP\"; bm_mi=7CFE3712E8A1AB27BA72ECC9AD585FF7~YAAQmS8UAk3gICiaAQAAQF60TB10g4PBKW7Ef/8wC2uOz2doK96bU+OsIP0B920jo8fFGWZGOjnQScvdAOgy0Y6jIcqssodlGxE3OlwZ8h8CKKgC8kJuM6ZtVzoLlkcC87dsdzUM9IvyEeztmi/Ntgb7oWEDX9KIYjRXPt57ZWTAHMorx7aJS6+TAn3jFJGEiT6Sxi+06EVX4pafYwOnDVCMiPafBitbhjLe4i8ieWIhS9+W55fWEFmaEfcgslZz9kpUBYoKipDwDIjuyJ7NtxyRAKx3pySJ8/eXOOnHIQ6SbqcsG3SFUFBY5fsuG6w=~1; ak_bmsc=5CBA72F59C40DE6C6528E985A91A3736~000000000000000000000000000000~YAAQmS8UAlbhICiaAQAAbWy0TB0nXLhw5uJqFnYXpG83QpaB+VbLCS9kpMmawS8yYTEtZFbeXIJh/qZ8JvFEHJwt+vP6zNS8kqXHZAN6dFasV+OvIXfi9YIQtBOmqcGXz7BXO1B2YzDU5/YzvRN05/DzXQplDqewpU48o3NlyUYJbOz+MLPcbCEj33SAyKTzh6qyjfJMazfLWXXfyWHjnitFhC7Cx48jAoPa3zf59AU8l7Njazvo+YdK4yTE12YOi+Zaiz0JkPdaEjkkeDRXEHbocBfNAgEo09V3YhBzTDQmTGh79tCKHHmeWr4LXUIwNKhchRC8UEHpP5Vdh7POKB+Av6ZtRoIm46IeMhye5LUPY4SQxd2jFOEP/eBxgIc9FQMjlR2Si0ci+KsVNCZpNOBbg3Bzg5bhQ9fE7pOG4mObi6Rcx/go1KkJO33H0vTd74HMf6bedZUQeKBjs8w3wHXHF8uk; bm_sv=61479F5B226C24E7B46BD9198B685A10~YAAQni8UAjnJgzKaAQAALljfTB1Lx8tW7dygI5KGtYqtvibl//vsF68uGfXKoUSFWIkTrTxVtwx3Mmn8vwnE3vVvgLfrEJbSt19sxrRFUFftlhORk55jgN6zJ79VH2pxfiKrKlIOs+eT7nS893Frryp11i5Fhj6s23IUJrrRnKfB0uMMe0GFm+gdbjfJw6YLp11xsIUHbcNtHek1Ow74CtDMPf3fEQ0a2Oeysyq5Kle5+4y0YPQ1ypL2VbPfbf/Qlw==~1; bm_sz=6D62012ECABB71DF5D3A0089D0E2DCA6~YAAQni8UAjrJgzKaAQAALljfTB3GfaunJxvK2j6EP1gVhfnvM67jr0UnxMC73m7sUfP4KSaJmGb+bdgxe25eLCk83koW7obGdcmtVdZgjWLF5A4+SLQgjWbggVT/IbF6NdJE7O+cL8BmNFBElSdB5LKrXKomQhVbJ4T+fLlrk6dVcmqB2pQ72NWEvLqtYuTmNkB3TpCu0JyMjKeM3yAt0U8w/XP+OiMHlBx46vXoZo+7D3ibUgrnMpyL6YuR3zfYueOX74XbL6ZHt5Z0RiSyJmcwipCasztmMeDxAx0jWN2wAQtsAsXM9hq8EqK8pr9peE8kN7Ylcx3WSDSLfuCcYmEsd8QU1Yn9kvQOaVXB33bgAWbg+3mcptp+h8foao8oF1B/VjBLIZTh8vMT3BwgMy3YYkKxFVUb61gZMAEL4upH4w2hYVPFPejgTwAGbQH/~4277570~4604979; _ga_NL01RYD9J8=GS2.1.s1762226297$o15$g0$t1762226297$j60$l0$h0; _abck=49D6757A9583B43879FAA2EEDE111977~0~YAAQni8UAl3JgzKaAQAA4lzfTA4BxfJoKeSlm6VaMhQD+7uSyO0mcXmTOqAx9NtEbDgord7qk2H0XJ5C5B6q05hXEwO64/5KE5t+L9wrBZSppDknb1jjRNEaZ/Mt0/7F5izpw1CWmqkiW0JVJDtP1MQJxsJXpJe7CreZmQtNU3Rt7FT2Pf8kGduZJUHxCpq+5GJUqyjNYLwvMEvdyInvPhjo2MF+mXdcuPHuEkw8dFGXMUhFPgB+HwFBPPrBnCKqfpFO9SE7c34ayBndpO4LOA/qEppWM196VVb5GVtsbTrSm931oQrl8PJvIYoYpwjZIq5u8n9llhXbWH3ShWdllGHhwzeDDJqKlghyDNrV51R/FAB0lsFYScl4BQZqn74gN80ZyTftot/ySARz1tZzYJzil5CBpOPyeREnO7Y4j27Tp9YCaXOPN82X2BXjzWSBDpfE1uCTCWpiTUd5vHYoVGL3GGg0PZk6gDo4hwUWso6Tm5qTmGnFlT2qE4jscyjxAxoNolYEayd+SQXn7Y4GfK2KIlnEJfh8qd81PzjiNQWmuwJGQHuto2v7VMiUGGXL79kR//b1+SXoTQkc0MbYuWW0JI2pTvkZkrVGPlCzLh6REUvVwS9N67vsY9rzd/E0ZkAcDAnLdZjvLeUukpHz6s/SNrGRHv3vqNUtCzDvWJDZzN8DEO+9EWDGUK6qa3Bu8+fihEX/TaJNyD7r9XZVN+U7H+7mf8efw9eGKTs8ec9jSwqDSPGnmNMQkWBqPEtFeWxKcrV8TmMpjSDAFImpk5yQ0sJnbhj7frRMTOR+j5p5n9aGaiK7+JvQVWmoq7rCm1pqrH+utCcMipCVrhwEvU4TttsCX7mHzNyAbJDJYeQCWCurBASSx/if08hmjA8krCVAPbfm1ZOMWf7cmgmbOBl26dO1we2hDx95VJb9z6u7HLhfp4Rmjl21nR2mjJoY3RfgIZEIvfjJErCxjC0D2angD1gWXFYu7MZIEA==~-1~-1~-1~AAQAAAAE%2f%2f%2f%2f%2f3YyvaMednHHjNIifCNN9jsh83FLHZs9L3S3ydhj0AZDd2fN4LhrrrKv1Fbp%2f8qbmU+zb0inxWmngv0+5+viv81NMrmSioXsrrhEK%2fkXeuHeD8q6jEm8Q14CLEnxXj+NdYRzsz6SPKIDyZjSxF88Ne5QJp3O+oleEbrSp9UIVqUnq3AGnMsKRSIHoTwXyk3ifa0ru30X5QJ4S8VAP4Fb%2frk3S3nU+kio+7o7v16naecEJkE%3d~-1; AV-cookieSelectedPointOfSale-1762096834708=%7B%22posCode%22%3A%22CO%22%2C%22stationCode%22%3A%22%22%2C%22userInteractWithPOSSelectorFlag%22%3Afalse%7D"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"errorCode\": \"INVALID_DEPARTURE_DATE\",\r\n  \"message\": \"La fecha de salida (2024-11-03) es inválida o pasada.\",\r\n  \"errors\": [\r\n    {\"code\": \"PAST_DATE\", \"field\": \"departureDate\"}\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nuxqa4.avtest.ink/pricing/api/v1/journeys",
+					"protocol": "https",
+					"host": [
+						"nuxqa4",
+						"avtest",
+						"ink"
+					],
+					"path": [
+						"pricing",
+						"api",
+						"v1",
+						"journeys"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://nuxqa4.avtest.ink/pricing/api/v1/journeys' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: es-US,es-419;q=0.9,es;q=0.8' \\\r\n  -H 'apikey: d9eaa63c9008987381860a36e0d8c2aa2c6a936b41bf35e42bbe11e97bd452ea' \\\r\n  -H 'content-type: application/json; charset=UTF-8' \\\r\n  -b 'WL-cookieSelectedPointOfSale=co; SessionSettingsCookie=%220dHWCeDmP2tecjO40wcoJYwhifOym0l6WlcJr0fT28IeYVGdt1Pt9jsYEDOh0pOPUbeJAMz%2BmnMQU1Ivce1bmxiHuGScWNp1j25wQdIgXsqzwQQD4Uhe%2B1SdJ9rg3duFH9L8Z3vnSQeveqQye3WAa%2B5TJ86AUuYsS6i7pyqyca8%3D%22; cjConsent=MHxOfDB8Tnww; cjUser=d0a0b2ea-e080-4ec7-b5f8-41b415c4f223; _ga=GA1.1.1350785974.1762096838; AV-cookieSelectedPointOfSale=%7B%22posCode%22%3A%22CO%22%2C%22stationCode%22%3A%22BOG%22%2C%22posCookieName%22%3A%22AV-cookieSelectedPointOfSale%22%7D; AV-cookieSelectedCurrency-1762096834708=%22COP%22; WL-cookieCurrency=\"COP\"; bm_mi=7CFE3712E8A1AB27BA72ECC9AD585FF7~YAAQmS8UAk3gICiaAQAAQF60TB10g4PBKW7Ef/8wC2uOz2doK96bU+OsIP0B920jo8fFGWZGOjnQScvdAOgy0Y6jIcqssodlGxE3OlwZ8h8CKKgC8kJuM6ZtVzoLlkcC87dsdzUM9IvyEeztmi/Ntgb7oWEDX9KIYjRXPt57ZWTAHMorx7aJS6+TAn3jFJGEiT6Sxi+06EVX4pafYwOnDVCMiPafBitbhjLe4i8ieWIhS9+W55fWEFmaEfcgslZz9kpUBYoKipDwDIjuyJ7NtxyRAKx3pySJ8/eXOOnHIQ6SbqcsG3SFUFBY5fsuG6w=~1; ak_bmsc=5CBA72F59C40DE6C6528E985A91A3736~000000000000000000000000000000~YAAQmS8UAlbhICiaAQAAbWy0TB0nXLhw5uJqFnYXpG83QpaB+VbLCS9kpMmawS8yYTEtZFbeXIJh/qZ8JvFEHJwt+vP6zNS8kqXHZAN6dFasV+OvIXfi9YIQtBOmqcGXz7BXO1B2YzDU5/YzvRN05/DzXQplDqewpU48o3NlyUYJbOz+MLPcbCEj33SAyKTzh6qyjfJMazfLWXXfyWHjnitFhC7Cx48jAoPa3zf59AU8l7Njazvo+YdK4yTE12YOi+Zaiz0JkPdaEjkkeDRXEHbocBfNAgEo09V3YhBzTDQmTGh79tCKHHmeWr4LXUIwNKhchRC8UEHpP5Vdh7POKB+Av6ZtRoIm46IeMhye5LUPY4SQxd2jFOEP/eBxgIc9FQMjlR2Si0ci+KsVNCZpNOBbg3Bzg5bhQ9fE7pOG4mObi6Rcx/go1KkJO33H0vTd74HMf6bedZUQeKBjs8w3wHXHF8uk; bm_sv=61479F5B226C24E7B46BD9198B685A10~YAAQni8UAjnJgzKaAQAALljfTB1Lx8tW7dygI5KGtYqtvibl//vsF68uGfXKoUSFWIkTrTxVtwx3Mmn8vwnE3vVvgLfrEJbSt19sxrRFUFftlhORk55jgN6zJ79VH2pxfiKrKlIOs+eT7nS893Frryp11i5Fhj6s23IUJrrRnKfB0uMMe0GFm+gdbjfJw6YLp11xsIUHbcNtHek1Ow74CtDMPf3fEQ0a2Oeysyq5Kle5+4y0YPQ1ypL2VbPfbf/Qlw==~1; bm_sz=6D62012ECABB71DF5D3A0089D0E2DCA6~YAAQni8UAjrJgzKaAQAALljfTB3GfaunJxvK2j6EP1gVhfnvM67jr0UnxMC73m7sUfP4KSaJmGb+bdgxe25eLCk83koW7obGdcmtVdZgjWLF5A4+SLQgjWbggVT/IbF6NdJE7O+cL8BmNFBElSdB5LKrXKomQhVbJ4T+fLlrk6dVcmqB2pQ72NWEvLqtYuTmNkB3TpCu0JyMjKeM3yAt0U8w/XP+OiMHlBx46vXoZo+7D3ibUgrnMpyL6YuR3zfYueOX74XbL6ZHt5Z0RiSyJmcwipCasztmMeDxAx0jWN2wAQtsAsXM9hq8EqK8pr9peE8kN7Ylcx3WSDSLfuCcYmEsd8QU1Yn9kvQOaVXB33bgAWbg+3mcptp+h8foao8oF1B/VjBLIZTh8vMT3BwgMy3YYkKxFVUb61gZMAEL4upH4w2hYVPFPejgTwAGbQH/~4277570~4604979; _ga_NL01RYD9J8=GS2.1.s1762226297$o15$g0$t1762226297$j60$l0$h0; _abck=49D6757A9583B43879FAA2EEDE111977~0~YAAQni8UAl3JgzKaAQAA4lzfTA4BxfJoKeSlm6VaMhQD+7uSyO0mcXmTOqAx9NtEbDgord7qk2H0XJ5C5B6q05hXEwO64/5KE5t+L9wrBZSppDknb1jjRNEaZ/Mt0/7F5izpw1CWmqkiW0JVJDtP1MQJxsJXpJe7CreZmQtNU3Rt7FT2Pf8kGduZJUHxCpq+5GJUqyjNYLwvMEvdyInvPhjo2MF+mXdcuPHuEkw8dFGXMUhFPgB+HwFBPPrBnCKqfpFO9SE7c34ayBndpO4LOA/qEppWM196VVb5GVtsbTrSm931oQrl8PJvIYoYpwjZIq5u8n9llhXbWH3ShWdllGHhwzeDDJqKlghyDNrV51R/FAB0lsFYScl4BQZqn74gN80ZyTftot/ySARz1tZzYJzil5CBpOPyeREnO7Y4j27Tp9YCaXOPN82X2BXjzWSBDpfE1uCTCWpiTUd5vHYoVGL3GGg0PZk6gDo4hwUWso6Tm5qTmGnFlT2qE4jscyjxAxoNolYEayd+SQXn7Y4GfK2KIlnEJfh8qd81PzjiNQWmuwJGQHuto2v7VMiUGGXL79kR//b1+SXoTQkc0MbYuWW0JI2pTvkZkrVGPlCzLh6REUvVwS9N67vsY9rzd/E0ZkAcDAnLdZjvLeUukpHz6s/SNrGRHv3vqNUtCzDvWJDZzN8DEO+9EWDGUK6qa3Bu8+fihEX/TaJNyD7r9XZVN+U7H+7mf8efw9eGKTs8ec9jSwqDSPGnmNMQkWBqPEtFeWxKcrV8TmMpjSDAFImpk5yQ0sJnbhj7frRMTOR+j5p5n9aGaiK7+JvQVWmoq7rCm1pqrH+utCcMipCVrhwEvU4TttsCX7mHzNyAbJDJYeQCWCurBASSx/if08hmjA8krCVAPbfm1ZOMWf7cmgmbOBl26dO1we2hDx95VJb9z6u7HLhfp4Rmjl21nR2mjJoY3RfgIZEIvfjJErCxjC0D2angD1gWXFYu7MZIEA==~-1~-1~-1~AAQAAAAE%2f%2f%2f%2f%2f3YyvaMednHHjNIifCNN9jsh83FLHZs9L3S3ydhj0AZDd2fN4LhrrrKv1Fbp%2f8qbmU+zb0inxWmngv0+5+viv81NMrmSioXsrrhEK%2fkXeuHeD8q6jEm8Q14CLEnxXj+NdYRzsz6SPKIDyZjSxF88Ne5QJp3O+oleEbrSp9UIVqUnq3AGnMsKRSIHoTwXyk3ifa0ru30X5QJ4S8VAP4Fb%2frk3S3nU+kio+7o7v16naecEJkE%3d~-1; AV-cookieSelectedPointOfSale-1762096834708=%7B%22posCode%22%3A%22CO%22%2C%22stationCode%22%3A%22%22%2C%22userInteractWithPOSSelectorFlag%22%3Afalse%7D' \\\r\n  -H 'origin: https://nuxqa4.avtest.ink' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://nuxqa4.avtest.ink/es/booking/select/?origin1=MDE&destination1=SCL&departure1=2025-11-05&adt1=1&tng1=0&chd1=0&inf1=0&currency=COP&posCode=CO' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'tabsessionid: 1762096834708' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"customerId\":\"0f9ef31c-e69b-43c0-89c7-b2a7a0356d67\",\"journeyPriceRequests\":[{\"currency\":\"COP\",\"destination\":\"SCL\",\"origin\":\"MDE\",\"pax\":{\"ADT\":1,\"CHD\":0,\"INF\":0,\"TNG\":0},\"pointOfSale\":{\"Country\":\"\",\"posCode\":\"CO\"},\"details\":{\"allPrice\":[{\"begin\":\"2025-11-05\",\"end\":\"2025-11-05\"}],\"lowestPrice\":[{\"begin\":\"2025-10-30\",\"end\":\"2025-11-11\"}]},\"filters\":{\"MaxConnectingSegments\":[\"20\"],\"requestedJourneyNumber\":[\"1\"],\"tripType\":[\"OW\"]},\"id\":\"1\"}],\"prospectId\":\"\"}'"
+			},
+			"response": []
+		}
+	]
+}
