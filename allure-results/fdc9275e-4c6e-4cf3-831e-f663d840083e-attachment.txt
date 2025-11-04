@@ -1,0 +1,35 @@
+[32mINFO    [0m root:conftest.py:99 WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+[32mINFO    [0m root:home_page.py:45 Navegación inicial completada.
+[32mINFO    [0m root:base_page.py:29 Clic: Radio Button Solo Ida ('xpath', "//span[text()='Solo ida']")
+[32mINFO    [0m root:base_page.py:29 Clic: Botón Origen (Abre Pop-up) ('id', 'originBtn')
+[32mINFO    [0m root:base_page.py:46 Input 'MDE' en: Campo Búsqueda Origen ('id', 'departureStationInputId')
+[32mINFO    [0m root:base_page.py:29 Clic: Seleccionar ciudad de Origen: MDE ('id', 'MDE')
+[32mINFO    [0m root:base_page.py:29 Clic: Botón Destino (Abre Pop-up) ('id', 'destinationBtn')
+[1m[31mERROR   [0m root:test_booking_oneway.py:60 Fallo funcional en el Caso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff79588e8e5+80021]
+	GetHandleVerifier [0x0x7ff79588e940+80112]
+	(No symbol) [0x0x7ff79561060f]
+	(No symbol) [0x0x7ff795668854]
+	(No symbol) [0x0x7ff795668b1c]
+	(No symbol) [0x0x7ff7956bc927]
+	(No symbol) [0x0x7ff79569126f]
+	(No symbol) [0x0x7ff7956b968a]
+	(No symbol) [0x0x7ff795691003]
+	(No symbol) [0x0x7ff7956595d1]
+	(No symbol) [0x0x7ff79565a3f3]
+	GetHandleVerifier [0x0x7ff795b4dc7d+2960429]
+	GetHandleVerifier [0x0x7ff795b47f3a+2936554]
+	GetHandleVerifier [0x0x7ff795b68977+3070247]
+	GetHandleVerifier [0x0x7ff7958a83ce+185214]
+	GetHandleVerifier [0x0x7ff7958afe1f+216527]
+	GetHandleVerifier [0x0x7ff795897b24+117460]
+	GetHandleVerifier [0x0x7ff795897cdf+117903]
+	GetHandleVerifier [0x0x7ff79587dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+[32mINFO    [0m root:db_manager.py:43 Resultado de 'test_oneway_MDE-SCL' insertado en la BD: FAIL
+[32mINFO    [0m root:conftest.py:103 Cerrando WebDriver.
+[32mINFO    [0m root:conftest.py:74 BrowserMob Proxy detenido.
+[32mINFO    [0m root:db_manager.py:51 Conexión con 'test_results.db' cerrada.

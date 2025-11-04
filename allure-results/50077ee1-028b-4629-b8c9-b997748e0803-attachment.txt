@@ -1,0 +1,131 @@
+[32mINFO    [0m root:db_manager.py:14 Base de datos 'test_results.db' lista.
+[32mINFO    [0m root:conftest.py:61 BrowserMob Proxy iniciado con éxito.
+[32mINFO    [0m root:conftest.py:99 WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+[32mINFO    [0m root:home_page.py:37 Navegación inicial completada.
+[1m[31mERROR   [0m root:base_page.py:35 Timeout esperando el elemento con locator ('xpath', "//button[@aria-label='Cerrar' or @class='close-button' or text()='Aceptar']")
+[1m[31mERROR   [0m root:base_page.py:50 Fallo al hacer clic en Botón de Cierre de Pop-up Inicial ('xpath', "//button[@aria-label='Cerrar' or @class='close-button' or text()='Aceptar']"): Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7b8dae8e5+80021]
+	GetHandleVerifier [0x0x7ff7b8dae940+80112]
+	(No symbol) [0x0x7ff7b8b3060f]
+	(No symbol) [0x0x7ff7b8b88854]
+	(No symbol) [0x0x7ff7b8b88b1c]
+	(No symbol) [0x0x7ff7b8bdc927]
+	(No symbol) [0x0x7ff7b8bb126f]
+	(No symbol) [0x0x7ff7b8bd968a]
+	(No symbol) [0x0x7ff7b8bb1003]
+	(No symbol) [0x0x7ff7b8b795d1]
+	(No symbol) [0x0x7ff7b8b7a3f3]
+	GetHandleVerifier [0x0x7ff7b906dc7d+2960429]
+	GetHandleVerifier [0x0x7ff7b9067f3a+2936554]
+	GetHandleVerifier [0x0x7ff7b9088977+3070247]
+	GetHandleVerifier [0x0x7ff7b8dc83ce+185214]
+	GetHandleVerifier [0x0x7ff7b8dcfe1f+216527]
+	GetHandleVerifier [0x0x7ff7b8db7b24+117460]
+	GetHandleVerifier [0x0x7ff7b8db7cdf+117903]
+	GetHandleVerifier [0x0x7ff7b8d9dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+[32mINFO    [0m root:home_page.py:45 No se encontró el pop-up inicial. Continuamos.
+[32mINFO    [0m root:test_booking_oneway.py:39 Esperando 5 segundos fijos para la estabilización inicial de la página.
+[32mINFO    [0m root:base_page.py:43 Clic: Radio Button Solo Ida ('xpath', "//span[text()='Solo ida']")
+[32mINFO    [0m root:base_page.py:43 Clic: Botón Origen (Abre Pop-up) ('id', 'originBtn')
+[32mINFO    [0m root:base_page.py:59 Input 'BOG' en: Campo Búsqueda Origen ('id', 'departureStationInputId')
+[32mINFO    [0m root:base_page.py:43 Clic: Seleccionar ciudad de Origen: BOG ('id', 'BOG')
+[32mINFO    [0m root:base_page.py:59 Input 'CTG' en: Campo Búsqueda Destino ('id', 'arrivalStationInputId')
+[32mINFO    [0m root:base_page.py:43 Clic: Seleccionar ciudad de Destino: CTG ('id', 'CTG')
+[33mWARNING [0m root:home_page.py:80 ADVERTENCIA: Fallo al inyectar la fecha (elemento no existe), continuando: Message: javascript error: Cannot set properties of null (setting 'value')
+  (Session info: chrome=141.0.7390.123)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7b8dae8e5+80021]
+	GetHandleVerifier [0x0x7ff7b8dae940+80112]
+	(No symbol) [0x0x7ff7b8b3060f]
+	(No symbol) [0x0x7ff7b8b3816a]
+	(No symbol) [0x0x7ff7b8b3b5b2]
+	(No symbol) [0x0x7ff7b8bdaa1b]
+	(No symbol) [0x0x7ff7b8bb122a]
+	(No symbol) [0x0x7ff7b8bd968a]
+	(No symbol) [0x0x7ff7b8bb1003]
+	(No symbol) [0x0x7ff7b8b795d1]
+	(No symbol) [0x0x7ff7b8b7a3f3]
+	GetHandleVerifier [0x0x7ff7b906dc7d+2960429]
+	GetHandleVerifier [0x0x7ff7b9067f3a+2936554]
+	GetHandleVerifier [0x0x7ff7b9088977+3070247]
+	GetHandleVerifier [0x0x7ff7b8dc83ce+185214]
+	GetHandleVerifier [0x0x7ff7b8dcfe1f+216527]
+	GetHandleVerifier [0x0x7ff7b8db7b24+117460]
+	GetHandleVerifier [0x0x7ff7b8db7cdf+117903]
+	GetHandleVerifier [0x0x7ff7b8d9dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+[33mWARNING [0m root:home_page.py:92 ADVERTENCIA: Fallo al inyectar adultos (elemento no existe), continuando: Message: javascript error: Cannot set properties of null (setting 'value')
+  (Session info: chrome=141.0.7390.123)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7b8dae8e5+80021]
+	GetHandleVerifier [0x0x7ff7b8dae940+80112]
+	(No symbol) [0x0x7ff7b8b3060f]
+	(No symbol) [0x0x7ff7b8b3816a]
+	(No symbol) [0x0x7ff7b8b3b5b2]
+	(No symbol) [0x0x7ff7b8bdaa1b]
+	(No symbol) [0x0x7ff7b8bb122a]
+	(No symbol) [0x0x7ff7b8bd968a]
+	(No symbol) [0x0x7ff7b8bb1003]
+	(No symbol) [0x0x7ff7b8b795d1]
+	(No symbol) [0x0x7ff7b8b7a3f3]
+	GetHandleVerifier [0x0x7ff7b906dc7d+2960429]
+	GetHandleVerifier [0x0x7ff7b9067f3a+2936554]
+	GetHandleVerifier [0x0x7ff7b9088977+3070247]
+	GetHandleVerifier [0x0x7ff7b8dc83ce+185214]
+	GetHandleVerifier [0x0x7ff7b8dcfe1f+216527]
+	GetHandleVerifier [0x0x7ff7b8db7b24+117460]
+	GetHandleVerifier [0x0x7ff7b8db7cdf+117903]
+	GetHandleVerifier [0x0x7ff7b8d9dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+[33mWARNING [0m root:home_page.py:101 ADVERTENCIA: Fallo al inyectar infantes (elemento no existe), continuando: Message: javascript error: Cannot set properties of null (setting 'value')
+  (Session info: chrome=141.0.7390.123)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7b8dae8e5+80021]
+	GetHandleVerifier [0x0x7ff7b8dae940+80112]
+	(No symbol) [0x0x7ff7b8b3060f]
+	(No symbol) [0x0x7ff7b8b3816a]
+	(No symbol) [0x0x7ff7b8b3b5b2]
+	(No symbol) [0x0x7ff7b8bdaa1b]
+	(No symbol) [0x0x7ff7b8bb122a]
+	(No symbol) [0x0x7ff7b8bd968a]
+	(No symbol) [0x0x7ff7b8bb1003]
+	(No symbol) [0x0x7ff7b8b795d1]
+	(No symbol) [0x0x7ff7b8b7a3f3]
+	GetHandleVerifier [0x0x7ff7b906dc7d+2960429]
+	GetHandleVerifier [0x0x7ff7b9067f3a+2936554]
+	GetHandleVerifier [0x0x7ff7b9088977+3070247]
+	GetHandleVerifier [0x0x7ff7b8dc83ce+185214]
+	GetHandleVerifier [0x0x7ff7b8dcfe1f+216527]
+	GetHandleVerifier [0x0x7ff7b8db7b24+117460]
+	GetHandleVerifier [0x0x7ff7b8db7cdf+117903]
+	GetHandleVerifier [0x0x7ff7b8d9dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+[32mINFO    [0m root:home_page.py:109 Clic FORZADO (JS) en Botón Buscar Vuelos.
+[33mWARNING [0m root:home_page.py:115 🛑 CAPTCHA/Verificación de Akamai DETECTADA. Iniciando pausa manual de 25 segundos.
+[33mWARNING [0m root:home_page.py:116 ➡️ POR FAVOR, RESUELVA EL CAPTCHA MANUALMENTE AHORA (Haga clic en el checkbox y en Continuar).
+[32mINFO    [0m root:home_page.py:120 Pausa manual terminada. El test intentará continuar con la SelectFlightPage...
+[32mINFO    [0m root:select_flight_page.py:46 Esperando 5 segundos para la carga estable de la página post-CAPTCHA...
+[32mINFO    [0m root:select_flight_page.py:34 Scroll N°1 ejecutado.
+[32mINFO    [0m root:select_flight_page.py:53 Validando presencia del botón clave 'Seleccionar de tarifa' con un tiempo de espera de 20s...
+[32mINFO    [0m root:select_flight_page.py:61 ✅ Página de resultados cargada y lista. Botón de tarifa visible y clickeable.
+[33mWARNING [0m root:base_page.py:45 Advertencia: El clic en Botón para Abrir el Selector de Tarifa fue interceptado. Intentando con JS.
+[32mINFO    [0m root:base_page.py:48 Clic forzado por JS: Botón para Abrir el Selector de Tarifa ('xpath', "(//button[contains(@class, 'journey_price_button') and .//span[contains(text(), 'Seleccionar de tarifa')]])[1]")
+[32mINFO    [0m root:select_flight_page.py:74 Selector de tarifa abierto.
+[32mINFO    [0m root:select_flight_page.py:80 Ejecutando 3 scrolls para asegurar la visibilidad de las tarifas...
+[32mINFO    [0m root:select_flight_page.py:34 Scroll N°1 ejecutado.
+[32mINFO    [0m root:select_flight_page.py:34 Scroll N°2 ejecutado.
+[32mINFO    [0m root:select_flight_page.py:34 Scroll N°3 ejecutado.
+[33mWARNING [0m root:base_page.py:45 Advertencia: El clic en Botón 'Seleccionar' la tarifa fue interceptado. Intentando con JS.
+[32mINFO    [0m root:base_page.py:48 Clic forzado por JS: Botón 'Seleccionar' la tarifa ('xpath', "(//button[contains(@class, 'fare_button') and contains(., 'Seleccionar')])[1]")
+[32mINFO    [0m root:select_flight_page.py:85 ✅ Tarifa seleccionada. Avanzando al Módulo 3.
+[32mINFO    [0m root:conftest.py:103 Cerrando WebDriver.

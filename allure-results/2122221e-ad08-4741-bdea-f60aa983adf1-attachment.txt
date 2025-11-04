@@ -1,0 +1,9 @@
+2025-11-02 10:51:04,979 - INFO - WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+2025-11-02 10:51:09,727 - INFO - Navegación inicial completada.
+2025-11-02 10:51:09,727 - INFO - Clic: Radio Button Solo Ida ('id', 'journeytypeId_1')
+2025-11-02 10:51:29,846 - ERROR - Fallo funcional en el Caso 1: Message: 
+
+2025-11-02 10:51:30,669 - INFO - Resultado de 'test_oneway_MDE-SCL' insertado en la BD: FAIL
+2025-11-02 10:51:30,707 - INFO - Cerrando WebDriver.
+2025-11-02 10:51:33,133 - INFO - Conexión con 'test_results.db' cerrada.
+2025-11-02 10:51:33,142 - INFO - BrowserMob Proxy detenido.

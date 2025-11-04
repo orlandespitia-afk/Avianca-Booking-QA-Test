@@ -1,0 +1,7 @@
+2025-11-02 12:14:05,128 - INFO - WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+2025-11-02 12:14:12,022 - INFO - Navegación inicial completada.
+2025-11-02 12:14:12,022 - INFO - Clic: Radio Button Solo Ida ('id', 'journeytypeId_1')
+2025-11-02 12:14:57,158 - ERROR - Fallo funcional en el Caso 1: Message: 
+
+2025-11-02 12:14:57,720 - INFO - Resultado de 'test_oneway_BOG-CTG' insertado en la BD: FAIL
+2025-11-02 12:14:57,818 - INFO - Cerrando WebDriver.

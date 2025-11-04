@@ -1,0 +1,29 @@
+[32mINFO    [0m root:conftest.py:103 WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/.
+[32mINFO    [0m root:home_page.py:28 Navegación inicial completada.
+[32mINFO    [0m root:base_page.py:23 Clic: Radio Button Solo Ida ('id', 'journeytypeId_1')
+[1m[31mERROR   [0m root:test_booking_oneway.py:60 Fallo funcional en el Caso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6cc38e8e5+80021]
+	GetHandleVerifier [0x0x7ff6cc38e940+80112]
+	(No symbol) [0x0x7ff6cc11060f]
+	(No symbol) [0x0x7ff6cc168854]
+	(No symbol) [0x0x7ff6cc168b1c]
+	(No symbol) [0x0x7ff6cc1bc927]
+	(No symbol) [0x0x7ff6cc19126f]
+	(No symbol) [0x0x7ff6cc1b968a]
+	(No symbol) [0x0x7ff6cc191003]
+	(No symbol) [0x0x7ff6cc1595d1]
+	(No symbol) [0x0x7ff6cc15a3f3]
+	GetHandleVerifier [0x0x7ff6cc64dc7d+2960429]
+	GetHandleVerifier [0x0x7ff6cc647f3a+2936554]
+	GetHandleVerifier [0x0x7ff6cc668977+3070247]
+	GetHandleVerifier [0x0x7ff6cc3a83ce+185214]
+	GetHandleVerifier [0x0x7ff6cc3afe1f+216527]
+	GetHandleVerifier [0x0x7ff6cc397b24+117460]
+	GetHandleVerifier [0x0x7ff6cc397cdf+117903]
+	GetHandleVerifier [0x0x7ff6cc37dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+[32mINFO    [0m root:db_manager.py:43 Resultado de 'test_oneway_BOG-CTG' insertado en la BD: FAIL
+[32mINFO    [0m root:conftest.py:107 Cerrando WebDriver.

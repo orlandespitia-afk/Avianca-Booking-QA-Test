@@ -1,0 +1,28 @@
+[32mINFO    [0m root:conftest.py:99 WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+[1m[31mERROR   [0m root:test_booking_oneway.py:50 Fallo funcional en el Caso 1: Message: invalid argument: 'url' must be a string
+  (Session info: chrome=141.0.7390.123)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff745d3e8e5+80021]
+	GetHandleVerifier [0x0x7ff745d3e940+80112]
+	(No symbol) [0x0x7ff745ac060f]
+	(No symbol) [0x0x7ff745b6a544]
+	(No symbol) [0x0x7ff745b4122a]
+	(No symbol) [0x0x7ff745b6968a]
+	(No symbol) [0x0x7ff745b41003]
+	(No symbol) [0x0x7ff745b095d1]
+	(No symbol) [0x0x7ff745b0a3f3]
+	GetHandleVerifier [0x0x7ff745ffdc7d+2960429]
+	GetHandleVerifier [0x0x7ff745ff7f3a+2936554]
+	GetHandleVerifier [0x0x7ff746018977+3070247]
+	GetHandleVerifier [0x0x7ff745d583ce+185214]
+	GetHandleVerifier [0x0x7ff745d5fe1f+216527]
+	GetHandleVerifier [0x0x7ff745d47b24+117460]
+	GetHandleVerifier [0x0x7ff745d47cdf+117903]
+	GetHandleVerifier [0x0x7ff745d2dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+[32mINFO    [0m root:db_manager.py:47 Resultado de 'test_oneway_MDE-SCL' insertado en la BD: FAIL
+[32mINFO    [0m root:conftest.py:103 Cerrando WebDriver.
+[32mINFO    [0m root:conftest.py:74 BrowserMob Proxy detenido.
+[32mINFO    [0m root:db_manager.py:57 Conexión con 'test_results.db' cerrada.

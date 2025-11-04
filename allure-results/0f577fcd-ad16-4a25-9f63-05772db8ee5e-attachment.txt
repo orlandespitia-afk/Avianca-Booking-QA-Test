@@ -1,0 +1,6 @@
+[32mINFO    [0m root:db_manager.py:14 Base de datos 'test_results.db' lista.
+[32mINFO    [0m root:conftest.py:61 BrowserMob Proxy iniciado con éxito.
+[32mINFO    [0m root:conftest.py:99 WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+[32mINFO    [0m root:select_flight_page.py:25 Esperando resultados para BOG a AUC...
+[31m[1mERROR   [0m root:base_page.py:35 Timeout esperando el elemento con locator ('xpath', "//h1[contains(text(), 'Selecciona tu vuelo') or contains(text(), 'Selección de Vuelo')]")
+[32mINFO    [0m root:conftest.py:103 Cerrando WebDriver.

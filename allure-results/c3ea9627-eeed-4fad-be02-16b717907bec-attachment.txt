@@ -1,0 +1,11 @@
+2025-11-02 15:21:46,758 - INFO - WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+2025-11-02 15:21:51,111 - INFO - Navegación inicial completada.
+2025-11-02 15:21:51,114 - INFO - Clic: Radio Button Solo Ida ('xpath', "//span[text()='Solo ida']")
+2025-11-02 15:21:52,432 - INFO - Clic: Botón Origen (Abre Pop-up) ('id', 'originBtn')
+2025-11-02 15:21:53,301 - INFO - Input 'BOG' en: Campo Búsqueda Origen ('id', 'departureStationInputId')
+2025-11-02 15:21:54,140 - INFO - Clic: Seleccionar primer resultado de Origen ('xpath', "//ul[@role='listbox']/li[1]")
+2025-11-02 15:21:55,725 - INFO - Input 'CTG' en: Campo Búsqueda Destino ('id', 'departureStationInputId')
+2025-11-02 15:22:41,155 - ERROR - Fallo funcional en el Caso 1: Message: 
+
+2025-11-02 15:22:41,747 - INFO - Resultado de 'test_oneway_BOG-CTG' insertado en la BD: FAIL
+2025-11-02 15:22:41,817 - INFO - Cerrando WebDriver.

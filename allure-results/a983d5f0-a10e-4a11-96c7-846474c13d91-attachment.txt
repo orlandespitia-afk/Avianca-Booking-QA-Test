@@ -1,0 +1,445 @@
+2025-11-03 08:48:58,550 - INFO - WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+2025-11-03 08:48:58,898 - INFO - Navegación inicial completada.
+2025-11-03 08:49:43,954 - ERROR - Timeout esperando el elemento con locator ('xpath', "//button[@aria-label='Cerrar' or @class='close-button' or text()='Aceptar']")
+2025-11-03 08:49:43,954 - ERROR - Fallo al hacer clic en Botón de Cierre de Pop-up Inicial ('xpath', "//button[@aria-label='Cerrar' or @class='close-button' or text()='Aceptar']"): Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff63f3fe8e5+80021]
+	GetHandleVerifier [0x0x7ff63f3fe940+80112]
+	(No symbol) [0x0x7ff63f18060f]
+	(No symbol) [0x0x7ff63f1d8854]
+	(No symbol) [0x0x7ff63f1d8b1c]
+	(No symbol) [0x0x7ff63f22c927]
+	(No symbol) [0x0x7ff63f20126f]
+	(No symbol) [0x0x7ff63f22968a]
+	(No symbol) [0x0x7ff63f201003]
+	(No symbol) [0x0x7ff63f1c95d1]
+	(No symbol) [0x0x7ff63f1ca3f3]
+	GetHandleVerifier [0x0x7ff63f6bdc7d+2960429]
+	GetHandleVerifier [0x0x7ff63f6b7f3a+2936554]
+	GetHandleVerifier [0x0x7ff63f6d8977+3070247]
+	GetHandleVerifier [0x0x7ff63f4183ce+185214]
+	GetHandleVerifier [0x0x7ff63f41fe1f+216527]
+	GetHandleVerifier [0x0x7ff63f407b24+117460]
+	GetHandleVerifier [0x0x7ff63f407cdf+117903]
+	GetHandleVerifier [0x0x7ff63f3edbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+2025-11-03 08:49:43,954 - INFO - No se encontró el pop-up inicial. Continuamos.
+2025-11-03 08:49:43,954 - INFO - Esperando 5 segundos fijos para la estabilización inicial de la página.
+2025-11-03 08:49:49,379 - INFO - Clic: Radio Button Solo Ida ('xpath', "//span[text()='Solo ida']")
+2025-11-03 08:49:49,733 - INFO - Clic: Botón Origen (Abre Pop-up) ('id', 'originBtn')
+2025-11-03 08:49:50,204 - INFO - Input 'MDE' en: Campo Búsqueda Origen ('id', 'departureStationInputId')
+2025-11-03 08:49:51,164 - INFO - Clic: Seleccionar ciudad de Origen: MDE ('id', 'MDE')
+2025-11-03 08:49:54,872 - INFO - Input 'SCL' en: Campo Búsqueda Destino ('id', 'arrivalStationInputId')
+2025-11-03 08:49:55,203 - INFO - Clic: Seleccionar ciudad de Destino: SCL ('id', 'SCL')
+2025-11-03 08:49:59,208 - WARNING - ADVERTENCIA: Fallo al inyectar la fecha (elemento no existe), continuando: Message: javascript error: Cannot set properties of null (setting 'value')
+  (Session info: chrome=141.0.7390.123)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff63f3fe8e5+80021]
+	GetHandleVerifier [0x0x7ff63f3fe940+80112]
+	(No symbol) [0x0x7ff63f18060f]
+	(No symbol) [0x0x7ff63f18816a]
+	(No symbol) [0x0x7ff63f18b5b2]
+	(No symbol) [0x0x7ff63f22aa1b]
+	(No symbol) [0x0x7ff63f20122a]
+	(No symbol) [0x0x7ff63f22968a]
+	(No symbol) [0x0x7ff63f201003]
+	(No symbol) [0x0x7ff63f1c95d1]
+	(No symbol) [0x0x7ff63f1ca3f3]
+	GetHandleVerifier [0x0x7ff63f6bdc7d+2960429]
+	GetHandleVerifier [0x0x7ff63f6b7f3a+2936554]
+	GetHandleVerifier [0x0x7ff63f6d8977+3070247]
+	GetHandleVerifier [0x0x7ff63f4183ce+185214]
+	GetHandleVerifier [0x0x7ff63f41fe1f+216527]
+	GetHandleVerifier [0x0x7ff63f407b24+117460]
+	GetHandleVerifier [0x0x7ff63f407cdf+117903]
+	GetHandleVerifier [0x0x7ff63f3edbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+2025-11-03 08:50:14,229 - WARNING - ADVERTENCIA: Fallo al inyectar adultos (elemento no existe), continuando: Message: javascript error: Cannot set properties of null (setting 'value')
+  (Session info: chrome=141.0.7390.123)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff63f3fe8e5+80021]
+	GetHandleVerifier [0x0x7ff63f3fe940+80112]
+	(No symbol) [0x0x7ff63f18060f]
+	(No symbol) [0x0x7ff63f18816a]
+	(No symbol) [0x0x7ff63f18b5b2]
+	(No symbol) [0x0x7ff63f22aa1b]
+	(No symbol) [0x0x7ff63f20122a]
+	(No symbol) [0x0x7ff63f22968a]
+	(No symbol) [0x0x7ff63f201003]
+	(No symbol) [0x0x7ff63f1c95d1]
+	(No symbol) [0x0x7ff63f1ca3f3]
+	GetHandleVerifier [0x0x7ff63f6bdc7d+2960429]
+	GetHandleVerifier [0x0x7ff63f6b7f3a+2936554]
+	GetHandleVerifier [0x0x7ff63f6d8977+3070247]
+	GetHandleVerifier [0x0x7ff63f4183ce+185214]
+	GetHandleVerifier [0x0x7ff63f41fe1f+216527]
+	GetHandleVerifier [0x0x7ff63f407b24+117460]
+	GetHandleVerifier [0x0x7ff63f407cdf+117903]
+	GetHandleVerifier [0x0x7ff63f3edbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+2025-11-03 08:50:14,243 - WARNING - ADVERTENCIA: Fallo al inyectar infantes (elemento no existe), continuando: Message: javascript error: Cannot set properties of null (setting 'value')
+  (Session info: chrome=141.0.7390.123)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff63f3fe8e5+80021]
+	GetHandleVerifier [0x0x7ff63f3fe940+80112]
+	(No symbol) [0x0x7ff63f18060f]
+	(No symbol) [0x0x7ff63f18816a]
+	(No symbol) [0x0x7ff63f18b5b2]
+	(No symbol) [0x0x7ff63f22aa1b]
+	(No symbol) [0x0x7ff63f20122a]
+	(No symbol) [0x0x7ff63f22968a]
+	(No symbol) [0x0x7ff63f201003]
+	(No symbol) [0x0x7ff63f1c95d1]
+	(No symbol) [0x0x7ff63f1ca3f3]
+	GetHandleVerifier [0x0x7ff63f6bdc7d+2960429]
+	GetHandleVerifier [0x0x7ff63f6b7f3a+2936554]
+	GetHandleVerifier [0x0x7ff63f6d8977+3070247]
+	GetHandleVerifier [0x0x7ff63f4183ce+185214]
+	GetHandleVerifier [0x0x7ff63f41fe1f+216527]
+	GetHandleVerifier [0x0x7ff63f407b24+117460]
+	GetHandleVerifier [0x0x7ff63f407cdf+117903]
+	GetHandleVerifier [0x0x7ff63f3edbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+2025-11-03 08:50:18,238 - INFO - Clic FORZADO (JS) en Botón Buscar Vuelos.
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f6d1' in position 36: character maps to <undefined>
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Usuario\AutomationFramework\venv\Scripts\pytest.exe\__main__.py", line 7, in <module>
+    sys.exit(console_main())
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\config\__init__.py", line 201, in console_main
+    code = main()
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\config\__init__.py", line 175, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\main.py", line 367, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 117, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\python.py", line 1671, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\python.py", line 157, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\Usuario\AutomationFramework\tests\tests\test_booking_oneway.py", line 44, in test_oneway_booking_flow
+    home_page.search_flight(origin, destination, "2026-12-01", adults, infants)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\allure_commons\_allure.py", line 202, in impl
+    return func(*a, **kw)
+  File "C:\Users\Usuario\AutomationFramework\pages\home_page.py", line 115, in search_flight
+    logging.warning("🛑 CAPTCHA/Verificación de Akamai DETECTADA. Iniciando pausa manual de 25 segundos.")
+Message: '🛑 CAPTCHA/Verificación de Akamai DETECTADA. Iniciando pausa manual de 25 segundos.'
+Arguments: ()
+2025-11-03 08:50:23,240 - WARNING - 🛑 CAPTCHA/Verificación de Akamai DETECTADA. Iniciando pausa manual de 25 segundos.
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 36-37: character maps to <undefined>
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Usuario\AutomationFramework\venv\Scripts\pytest.exe\__main__.py", line 7, in <module>
+    sys.exit(console_main())
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\config\__init__.py", line 201, in console_main
+    code = main()
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\config\__init__.py", line 175, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\main.py", line 367, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 117, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\python.py", line 1671, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\python.py", line 157, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\Usuario\AutomationFramework\tests\tests\test_booking_oneway.py", line 44, in test_oneway_booking_flow
+    home_page.search_flight(origin, destination, "2026-12-01", adults, infants)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\allure_commons\_allure.py", line 202, in impl
+    return func(*a, **kw)
+  File "C:\Users\Usuario\AutomationFramework\pages\home_page.py", line 116, in search_flight
+    logging.warning("➡️ POR FAVOR, RESUELVA EL CAPTCHA MANUALMENTE AHORA (Haga clic en el checkbox y en Continuar).")
+Message: '➡️ POR FAVOR, RESUELVA EL CAPTCHA MANUALMENTE AHORA (Haga clic en el checkbox y en Continuar).'
+Arguments: ()
+2025-11-03 08:50:23,273 - WARNING - ➡️ POR FAVOR, RESUELVA EL CAPTCHA MANUALMENTE AHORA (Haga clic en el checkbox y en Continuar).
+2025-11-03 08:50:48,283 - INFO - Pausa manual terminada. El test intentará continuar con la SelectFlightPage...
+2025-11-03 08:50:48,283 - INFO - Esperando 5 segundos para la carga estable de la página post-CAPTCHA...
+2025-11-03 08:50:53,340 - INFO - Scroll N°1 ejecutado con 250px.
+2025-11-03 08:50:53,841 - INFO - Validando presencia del botón clave 'Seleccionar de tarifa' con un tiempo de espera de 20s...
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 33: character maps to <undefined>
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Usuario\AutomationFramework\venv\Scripts\pytest.exe\__main__.py", line 7, in <module>
+    sys.exit(console_main())
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\config\__init__.py", line 201, in console_main
+    code = main()
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\config\__init__.py", line 175, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\main.py", line 367, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 117, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\python.py", line 1671, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\python.py", line 157, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\Usuario\AutomationFramework\tests\tests\test_booking_oneway.py", line 49, in test_oneway_booking_flow
+    select_flight_page.validate_search_results(origin, destination)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\allure_commons\_allure.py", line 202, in impl
+    return func(*a, **kw)
+  File "C:\Users\Usuario\AutomationFramework\pages\select_flight_page.py", line 56, in validate_search_results
+    logging.info("✅ Página de resultados cargada y lista. Botón de tarifa visible y clickeable.")
+Message: '✅ Página de resultados cargada y lista. Botón de tarifa visible y clickeable.'
+Arguments: ()
+2025-11-03 08:50:53,888 - INFO - ✅ Página de resultados cargada y lista. Botón de tarifa visible y clickeable.
+2025-11-03 08:50:54,446 - INFO - Clic: Botón para Abrir el Selector de Tarifa ('xpath', "(//button[contains(@class, 'journey_price_button') and .//span[contains(text(), 'Seleccionar de tarifa')]])[1]")
+2025-11-03 08:50:54,446 - INFO - Selector de tarifa abierto.
+2025-11-03 08:50:57,450 - INFO - Ejecutando 3 scrolls de 250px para asegurar la visibilidad de las tarifas...
+2025-11-03 08:50:57,469 - INFO - Scroll N°1 ejecutado con 250px.
+2025-11-03 08:50:58,012 - INFO - Scroll N°2 ejecutado con 250px.
+2025-11-03 08:50:58,557 - INFO - Scroll N°3 ejecutado con 250px.
+2025-11-03 08:50:59,316 - INFO - Clic: Botón 'Seleccionar' la tarifa ('xpath', "(//button[contains(@class, 'fare_button') and contains(., 'Seleccionar')])[1]")
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\Usuario\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 33: character maps to <undefined>
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Usuario\AutomationFramework\venv\Scripts\pytest.exe\__main__.py", line 7, in <module>
+    sys.exit(console_main())
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\config\__init__.py", line 201, in console_main
+    code = main()
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\config\__init__.py", line 175, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\main.py", line 367, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 117, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\python.py", line 1671, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\_pytest\python.py", line 157, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\Usuario\AutomationFramework\tests\tests\test_booking_oneway.py", line 52, in test_oneway_booking_flow
+    select_flight_page.select_cheapest_flight()
+  File "C:\Users\Usuario\AutomationFramework\venv\Lib\site-packages\allure_commons\_allure.py", line 202, in impl
+    return func(*a, **kw)
+  File "C:\Users\Usuario\AutomationFramework\pages\select_flight_page.py", line 80, in select_cheapest_flight
+    logging.info("✅ Tarifa seleccionada. Avanzando al Módulo 3.")
+Message: '✅ Tarifa seleccionada. Avanzando al Módulo 3.'
+Arguments: ()
+2025-11-03 08:50:59,317 - INFO - ✅ Tarifa seleccionada. Avanzando al Módulo 3.
+2025-11-03 08:50:59,453 - INFO - Cerrando WebDriver.
+2025-11-03 08:51:02,148 - INFO - BrowserMob Proxy detenido.
+2025-11-03 08:51:02,166 - INFO - Conexión con 'test_results.db' cerrada.

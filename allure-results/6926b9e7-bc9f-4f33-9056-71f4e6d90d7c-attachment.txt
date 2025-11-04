@@ -1,0 +1,38 @@
+[32mINFO    [0m root:db_manager.py:14 Base de datos 'test_results.db' lista.
+[32mINFO    [0m root:conftest.py:61 BrowserMob Proxy iniciado con éxito.
+[32mINFO    [0m root:conftest.py:99 WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+[32mINFO    [0m root:home_page.py:50 Navegación inicial completada.
+[32mINFO    [0m root:base_page.py:28 Clic: Botón de Cierre de Pop-up Inicial ('xpath', "//button[@aria-label='Cerrar' or @class='close-button' or text()='Aceptar']")
+[32mINFO    [0m root:home_page.py:58 No se encontró el pop-up inicial. Continuamos.
+[32mINFO    [0m root:base_page.py:28 Clic: Radio Button Solo Ida ('xpath', "//span[text()='Solo ida']")
+[32mINFO    [0m root:base_page.py:28 Clic: Botón Origen (Abre Pop-up) ('id', 'originBtn')
+[32mINFO    [0m root:base_page.py:59 Input 'BOG' en: Campo Búsqueda Origen ('id', 'departureStationInputId')
+[32mINFO    [0m root:base_page.py:28 Clic: Seleccionar ciudad de Origen: BOG ('id', 'BOG')
+[32mINFO    [0m root:base_page.py:59 Input 'CTG' en: Campo Búsqueda Destino ('id', 'arrivalStationInputId')
+[32mINFO    [0m root:base_page.py:28 Clic: Seleccionar ciudad de Destino: CTG ('id', 'CTG')
+[1m[31mERROR   [0m root:test_booking_oneway.py:50 Fallo funcional en el Caso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff770f0e8e5+80021]
+	GetHandleVerifier [0x0x7ff770f0e940+80112]
+	(No symbol) [0x0x7ff770c9060f]
+	(No symbol) [0x0x7ff770ce8854]
+	(No symbol) [0x0x7ff770ce8b1c]
+	(No symbol) [0x0x7ff770d3c927]
+	(No symbol) [0x0x7ff770d1126f]
+	(No symbol) [0x0x7ff770d3968a]
+	(No symbol) [0x0x7ff770d11003]
+	(No symbol) [0x0x7ff770cd95d1]
+	(No symbol) [0x0x7ff770cda3f3]
+	GetHandleVerifier [0x0x7ff7711cdc7d+2960429]
+	GetHandleVerifier [0x0x7ff7711c7f3a+2936554]
+	GetHandleVerifier [0x0x7ff7711e8977+3070247]
+	GetHandleVerifier [0x0x7ff770f283ce+185214]
+	GetHandleVerifier [0x0x7ff770f2fe1f+216527]
+	GetHandleVerifier [0x0x7ff770f17b24+117460]
+	GetHandleVerifier [0x0x7ff770f17cdf+117903]
+	GetHandleVerifier [0x0x7ff770efdbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+[32mINFO    [0m root:db_manager.py:47 Resultado de 'test_oneway_BOG-CTG' insertado en la BD: FAIL
+[32mINFO    [0m root:conftest.py:103 Cerrando WebDriver.

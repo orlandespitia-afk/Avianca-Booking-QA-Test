@@ -1,0 +1,13 @@
+2025-11-02 15:22:46,358 - INFO - WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+2025-11-02 15:22:50,281 - INFO - Navegación inicial completada.
+2025-11-02 15:22:50,282 - INFO - Clic: Radio Button Solo Ida ('xpath', "//span[text()='Solo ida']")
+2025-11-02 15:22:51,321 - INFO - Clic: Botón Origen (Abre Pop-up) ('id', 'originBtn')
+2025-11-02 15:22:52,232 - INFO - Input 'MDE' en: Campo Búsqueda Origen ('id', 'departureStationInputId')
+2025-11-02 15:22:53,032 - INFO - Clic: Seleccionar primer resultado de Origen ('xpath', "//ul[@role='listbox']/li[1]")
+2025-11-02 15:22:54,104 - INFO - Input 'SCL' en: Campo Búsqueda Destino ('id', 'departureStationInputId')
+2025-11-02 15:23:39,521 - ERROR - Fallo funcional en el Caso 1: Message: 
+
+2025-11-02 15:23:40,027 - INFO - Resultado de 'test_oneway_MDE-SCL' insertado en la BD: FAIL
+2025-11-02 15:23:40,066 - INFO - Cerrando WebDriver.
+2025-11-02 15:23:43,598 - INFO - BrowserMob Proxy detenido.
+2025-11-02 15:23:43,614 - INFO - Conexión con 'test_results.db' cerrada.

@@ -1,0 +1,38 @@
+2025-11-02 22:36:27,712 - INFO - Base de datos 'test_results.db' lista.
+2025-11-02 22:36:34,231 - INFO - BrowserMob Proxy iniciado con éxito.
+2025-11-02 22:36:36,812 - INFO - WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+2025-11-02 22:36:41,996 - INFO - Navegación inicial completada.
+2025-11-02 22:36:41,996 - INFO - Clic: Botón de Cierre de Pop-up Inicial ('xpath', "//button[@aria-label='Cerrar' or @class='close-button' or text()='Aceptar']")
+2025-11-02 22:37:27,080 - INFO - No se encontró el pop-up inicial. Continuamos.
+2025-11-02 22:37:27,080 - INFO - Clic: Radio Button Solo Ida ('xpath', "//span[text()='Solo ida']")
+2025-11-02 22:37:27,979 - INFO - Clic: Botón Origen (Abre Pop-up) ('id', 'originBtn')
+2025-11-02 22:37:28,828 - INFO - Input 'BOG' en: Campo Búsqueda Origen ('id', 'departureStationInputId')
+2025-11-02 22:37:29,653 - INFO - Clic: Seleccionar ciudad de Origen: BOG ('id', 'BOG')
+2025-11-02 22:37:34,733 - INFO - Input 'CTG' en: Campo Búsqueda Destino ('id', 'arrivalStationInputId')
+2025-11-02 22:37:35,420 - INFO - Clic: Seleccionar ciudad de Destino: CTG ('id', 'CTG')
+2025-11-02 22:38:25,294 - ERROR - Fallo funcional en el Caso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff770f0e8e5+80021]
+	GetHandleVerifier [0x0x7ff770f0e940+80112]
+	(No symbol) [0x0x7ff770c9060f]
+	(No symbol) [0x0x7ff770ce8854]
+	(No symbol) [0x0x7ff770ce8b1c]
+	(No symbol) [0x0x7ff770d3c927]
+	(No symbol) [0x0x7ff770d1126f]
+	(No symbol) [0x0x7ff770d3968a]
+	(No symbol) [0x0x7ff770d11003]
+	(No symbol) [0x0x7ff770cd95d1]
+	(No symbol) [0x0x7ff770cda3f3]
+	GetHandleVerifier [0x0x7ff7711cdc7d+2960429]
+	GetHandleVerifier [0x0x7ff7711c7f3a+2936554]
+	GetHandleVerifier [0x0x7ff7711e8977+3070247]
+	GetHandleVerifier [0x0x7ff770f283ce+185214]
+	GetHandleVerifier [0x0x7ff770f2fe1f+216527]
+	GetHandleVerifier [0x0x7ff770f17b24+117460]
+	GetHandleVerifier [0x0x7ff770f17cdf+117903]
+	GetHandleVerifier [0x0x7ff770efdbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+2025-11-02 22:38:25,309 - INFO - Resultado de 'test_oneway_BOG-CTG' insertado en la BD: FAIL
+2025-11-02 22:38:25,530 - INFO - Cerrando WebDriver.

@@ -1,0 +1,39 @@
+2025-11-02 22:02:49,943 - INFO - Base de datos 'test_results.db' lista.
+2025-11-02 22:02:54,511 - INFO - BrowserMob Proxy iniciado con éxito.
+2025-11-02 22:02:56,931 - INFO - WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+2025-11-02 22:03:01,878 - INFO - Navegación inicial completada.
+2025-11-02 22:03:01,879 - INFO - Clic: Botón de Cierre de Pop-up Inicial ('xpath', "//button[@aria-label='Cerrar' or @class='close-button' or text()='Aceptar']")
+2025-11-02 22:03:47,023 - INFO - No se encontró el pop-up inicial. Continuamos.
+2025-11-02 22:03:47,023 - INFO - Clic: Radio Button Solo Ida ('xpath', "//span[text()='Solo ida']")
+2025-11-02 22:03:47,961 - INFO - Clic: Botón Origen (Abre Pop-up) ('id', 'originBtn')
+2025-11-02 22:03:48,780 - INFO - Input 'BOG' en: Campo Búsqueda Origen ('id', 'departureStationInputId')
+2025-11-02 22:03:49,568 - INFO - Clic: Seleccionar ciudad de Origen: BOG ('id', 'BOG')
+2025-11-02 22:03:54,590 - INFO - Input 'CTG' en: Campo Búsqueda Destino ('id', 'arrivalStationInputId')
+2025-11-02 22:03:55,290 - INFO - Clic: Seleccionar ciudad de Destino: CTG ('id', 'CTG')
+2025-11-02 22:04:00,013 - INFO - Clic: Campo Fecha Salida (Abre Calendario) ('id', 'date-departure-input')
+2025-11-02 22:04:45,162 - ERROR - Fallo funcional en el Caso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff76c62e8e5+80021]
+	GetHandleVerifier [0x0x7ff76c62e940+80112]
+	(No symbol) [0x0x7ff76c3b060f]
+	(No symbol) [0x0x7ff76c408854]
+	(No symbol) [0x0x7ff76c408b1c]
+	(No symbol) [0x0x7ff76c45c927]
+	(No symbol) [0x0x7ff76c43126f]
+	(No symbol) [0x0x7ff76c45968a]
+	(No symbol) [0x0x7ff76c431003]
+	(No symbol) [0x0x7ff76c3f95d1]
+	(No symbol) [0x0x7ff76c3fa3f3]
+	GetHandleVerifier [0x0x7ff76c8edc7d+2960429]
+	GetHandleVerifier [0x0x7ff76c8e7f3a+2936554]
+	GetHandleVerifier [0x0x7ff76c908977+3070247]
+	GetHandleVerifier [0x0x7ff76c6483ce+185214]
+	GetHandleVerifier [0x0x7ff76c64fe1f+216527]
+	GetHandleVerifier [0x0x7ff76c637b24+117460]
+	GetHandleVerifier [0x0x7ff76c637cdf+117903]
+	GetHandleVerifier [0x0x7ff76c61dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+2025-11-02 22:04:45,203 - INFO - Resultado de 'test_oneway_BOG-CTG' insertado en la BD: FAIL
+2025-11-02 22:04:45,603 - INFO - Cerrando WebDriver.

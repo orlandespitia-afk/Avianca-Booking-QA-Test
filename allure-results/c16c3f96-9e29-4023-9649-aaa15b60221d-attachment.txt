@@ -1,0 +1,10 @@
+2025-11-02 04:24:39,575 - INFO - BrowserMob Proxy iniciado con éxito.
+2025-11-02 04:24:39,593 - INFO - Base de datos 'test_results.db' lista.
+2025-11-02 04:24:43,158 - INFO - WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/.
+2025-11-02 04:24:45,298 - INFO - Navegación inicial completada.
+2025-11-02 04:24:46,227 - ERROR - Fallo en la ejecución, registrando en DB. Error: FALLO: No se encontró el evento 'Session' con data válida.
+assert {}
+2025-11-02 04:24:46,233 - INFO - Resultado de 'test_login_capture_session' insertado en la BD: FAIL
+2025-11-02 04:24:46,683 - INFO - Cerrando WebDriver.
+2025-11-02 04:24:49,403 - INFO - Conexión con 'test_results.db' cerrada.
+2025-11-02 04:24:49,413 - INFO - BrowserMob Proxy detenido.

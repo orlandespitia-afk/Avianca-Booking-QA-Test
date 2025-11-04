@@ -1,0 +1,112 @@
+2025-11-02 23:03:04,733 - INFO - Base de datos 'test_results.db' lista.
+2025-11-02 23:03:11,298 - INFO - BrowserMob Proxy iniciado con éxito.
+2025-11-02 23:03:14,683 - INFO - WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+2025-11-02 23:03:15,739 - INFO - Navegación inicial completada.
+2025-11-02 23:04:00,797 - ERROR - Timeout esperando el elemento con locator ('xpath', "//button[@aria-label='Cerrar' or @class='close-button' or text()='Aceptar']")
+2025-11-02 23:04:00,798 - ERROR - Fallo al hacer clic en Botón de Cierre de Pop-up Inicial ('xpath', "//button[@aria-label='Cerrar' or @class='close-button' or text()='Aceptar']"): Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6e53fe8e5+80021]
+	GetHandleVerifier [0x0x7ff6e53fe940+80112]
+	(No symbol) [0x0x7ff6e518060f]
+	(No symbol) [0x0x7ff6e51d8854]
+	(No symbol) [0x0x7ff6e51d8b1c]
+	(No symbol) [0x0x7ff6e522c927]
+	(No symbol) [0x0x7ff6e520126f]
+	(No symbol) [0x0x7ff6e522968a]
+	(No symbol) [0x0x7ff6e5201003]
+	(No symbol) [0x0x7ff6e51c95d1]
+	(No symbol) [0x0x7ff6e51ca3f3]
+	GetHandleVerifier [0x0x7ff6e56bdc7d+2960429]
+	GetHandleVerifier [0x0x7ff6e56b7f3a+2936554]
+	GetHandleVerifier [0x0x7ff6e56d8977+3070247]
+	GetHandleVerifier [0x0x7ff6e54183ce+185214]
+	GetHandleVerifier [0x0x7ff6e541fe1f+216527]
+	GetHandleVerifier [0x0x7ff6e5407b24+117460]
+	GetHandleVerifier [0x0x7ff6e5407cdf+117903]
+	GetHandleVerifier [0x0x7ff6e53edbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+2025-11-02 23:04:00,801 - INFO - No se encontró el pop-up inicial. Continuamos.
+2025-11-02 23:04:01,319 - INFO - Clic: Radio Button Solo Ida ('xpath', "//span[text()='Solo ida']")
+2025-11-02 23:04:01,880 - INFO - Clic: Botón Origen (Abre Pop-up) ('id', 'originBtn')
+2025-11-02 23:04:02,519 - INFO - Input 'BOG' en: Campo Búsqueda Origen ('id', 'departureStationInputId')
+2025-11-02 23:04:04,345 - INFO - Clic: Seleccionar ciudad de Origen: BOG ('id', 'BOG')
+2025-11-02 23:04:08,041 - INFO - Input 'CTG' en: Campo Búsqueda Destino ('id', 'arrivalStationInputId')
+2025-11-02 23:04:08,426 - INFO - Clic: Seleccionar ciudad de Destino: CTG ('id', 'CTG')
+2025-11-02 23:04:12,448 - WARNING - ADVERTENCIA: Fallo al inyectar la fecha, el elemento podría no existir: Message: javascript error: Cannot set properties of null (setting 'value')
+  (Session info: chrome=141.0.7390.123)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6e53fe8e5+80021]
+	GetHandleVerifier [0x0x7ff6e53fe940+80112]
+	(No symbol) [0x0x7ff6e518060f]
+	(No symbol) [0x0x7ff6e518816a]
+	(No symbol) [0x0x7ff6e518b5b2]
+	(No symbol) [0x0x7ff6e522aa1b]
+	(No symbol) [0x0x7ff6e520122a]
+	(No symbol) [0x0x7ff6e522968a]
+	(No symbol) [0x0x7ff6e5201003]
+	(No symbol) [0x0x7ff6e51c95d1]
+	(No symbol) [0x0x7ff6e51ca3f3]
+	GetHandleVerifier [0x0x7ff6e56bdc7d+2960429]
+	GetHandleVerifier [0x0x7ff6e56b7f3a+2936554]
+	GetHandleVerifier [0x0x7ff6e56d8977+3070247]
+	GetHandleVerifier [0x0x7ff6e54183ce+185214]
+	GetHandleVerifier [0x0x7ff6e541fe1f+216527]
+	GetHandleVerifier [0x0x7ff6e5407b24+117460]
+	GetHandleVerifier [0x0x7ff6e5407cdf+117903]
+	GetHandleVerifier [0x0x7ff6e53edbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+2025-11-02 23:05:05,539 - ERROR - Timeout esperando el elemento con locator ('id', 'adults-selector')
+2025-11-02 23:05:05,539 - ERROR - Fallo al enviar keys a Campo Adultos ('id', 'adults-selector'): Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6e53fe8e5+80021]
+	GetHandleVerifier [0x0x7ff6e53fe940+80112]
+	(No symbol) [0x0x7ff6e518060f]
+	(No symbol) [0x0x7ff6e51d8854]
+	(No symbol) [0x0x7ff6e51d8b1c]
+	(No symbol) [0x0x7ff6e522c927]
+	(No symbol) [0x0x7ff6e520126f]
+	(No symbol) [0x0x7ff6e522968a]
+	(No symbol) [0x0x7ff6e5201003]
+	(No symbol) [0x0x7ff6e51c95d1]
+	(No symbol) [0x0x7ff6e51ca3f3]
+	GetHandleVerifier [0x0x7ff6e56bdc7d+2960429]
+	GetHandleVerifier [0x0x7ff6e56b7f3a+2936554]
+	GetHandleVerifier [0x0x7ff6e56d8977+3070247]
+	GetHandleVerifier [0x0x7ff6e54183ce+185214]
+	GetHandleVerifier [0x0x7ff6e541fe1f+216527]
+	GetHandleVerifier [0x0x7ff6e5407b24+117460]
+	GetHandleVerifier [0x0x7ff6e5407cdf+117903]
+	GetHandleVerifier [0x0x7ff6e53edbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+2025-11-02 23:05:05,599 - ERROR - Fallo funcional en el Caso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6e53fe8e5+80021]
+	GetHandleVerifier [0x0x7ff6e53fe940+80112]
+	(No symbol) [0x0x7ff6e518060f]
+	(No symbol) [0x0x7ff6e51d8854]
+	(No symbol) [0x0x7ff6e51d8b1c]
+	(No symbol) [0x0x7ff6e522c927]
+	(No symbol) [0x0x7ff6e520126f]
+	(No symbol) [0x0x7ff6e522968a]
+	(No symbol) [0x0x7ff6e5201003]
+	(No symbol) [0x0x7ff6e51c95d1]
+	(No symbol) [0x0x7ff6e51ca3f3]
+	GetHandleVerifier [0x0x7ff6e56bdc7d+2960429]
+	GetHandleVerifier [0x0x7ff6e56b7f3a+2936554]
+	GetHandleVerifier [0x0x7ff6e56d8977+3070247]
+	GetHandleVerifier [0x0x7ff6e54183ce+185214]
+	GetHandleVerifier [0x0x7ff6e541fe1f+216527]
+	GetHandleVerifier [0x0x7ff6e5407b24+117460]
+	GetHandleVerifier [0x0x7ff6e5407cdf+117903]
+	GetHandleVerifier [0x0x7ff6e53edbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+2025-11-02 23:05:05,624 - INFO - Resultado de 'test_oneway_BOG-CTG' insertado en la BD: FAIL
+2025-11-02 23:05:06,195 - INFO - Cerrando WebDriver.

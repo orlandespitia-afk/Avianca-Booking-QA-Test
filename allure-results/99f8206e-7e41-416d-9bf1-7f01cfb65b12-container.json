@@ -1,0 +1,1 @@
+{"uuid": "b38f1c9e-f1bc-402e-8e9f-d7965245c817", "children": ["f7bdb68d-3a26-4b7f-9b7e-d1c4b90316c8"], "befores": [{"name": "proxy_server", "status": "passed", "start": 1762075716025, "stop": 1762075716542}], "afters": [{"name": "proxy_server::0", "status": "passed", "start": 1762075728735, "stop": 1762075728738}], "start": 1762075716025, "stop": 1762075728738}

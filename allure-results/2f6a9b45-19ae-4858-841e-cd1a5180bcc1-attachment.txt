@@ -1,0 +1,1 @@
+2025-11-04 01:10:20,090 - INFO - Conexión con 'test_results.db' cerrada.

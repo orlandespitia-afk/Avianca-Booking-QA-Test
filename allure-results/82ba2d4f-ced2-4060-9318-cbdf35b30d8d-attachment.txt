@@ -1,0 +1,13 @@
+2025-11-02 15:20:00,556 - INFO - WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+2025-11-02 15:20:05,450 - INFO - Navegación inicial completada.
+2025-11-02 15:20:05,451 - INFO - Clic: Botón de Cierre de Pop-up Inicial ('xpath', "//button[@aria-label='Cerrar' or @class='close-button' or text()='Aceptar']")
+2025-11-02 15:20:50,536 - INFO - No se encontró el pop-up inicial. Continuamos.
+2025-11-02 15:20:50,538 - INFO - Clic: Radio Button Solo Ida ('xpath', "//span[text()='Solo ida']")
+2025-11-02 15:20:51,553 - INFO - Clic: Botón Origen (Abre Pop-up) ('id', 'originBtn')
+2025-11-02 15:20:52,355 - INFO - Input 'MDE' en: Campo Búsqueda Origen ('id', 'departureStationInputId')
+2025-11-02 15:20:53,177 - INFO - Clic: Seleccionar primer resultado de Origen ('xpath', "//ul[@role='listbox']/li[1]")
+2025-11-02 15:20:54,336 - INFO - Input 'SCL' en: Campo Búsqueda Destino ('id', 'departureStationInputId')
+2025-11-02 15:21:39,843 - ERROR - Fallo funcional en el Caso 1: Message: 
+
+2025-11-02 15:21:39,867 - INFO - Resultado de 'test_oneway_MDE-SCL' insertado en la BD: FAIL
+2025-11-02 15:21:39,980 - INFO - Cerrando WebDriver.

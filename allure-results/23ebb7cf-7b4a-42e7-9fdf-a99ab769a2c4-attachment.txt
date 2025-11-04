@@ -1,0 +1,37 @@
+2025-11-02 17:08:57,729 - INFO - WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+2025-11-02 17:09:03,551 - INFO - Navegación inicial completada.
+2025-11-02 17:09:03,552 - INFO - Clic: Radio Button Solo Ida ('xpath', "//span[text()='Solo ida']")
+2025-11-02 17:09:04,559 - INFO - Clic: Botón Origen (Abre Pop-up) ('id', 'originBtn')
+2025-11-02 17:09:05,446 - INFO - Input 'MDE' en: Campo Búsqueda Origen ('id', 'departureStationInputId')
+2025-11-02 17:09:06,230 - INFO - Clic: Seleccionar ciudad de Origen: MDE ('id', 'MDE')
+2025-11-02 17:09:14,845 - INFO - Input 'SCL' en: Campo Búsqueda Destino ('id', 'arrivalStationInputId')
+2025-11-02 17:09:15,612 - INFO - Clic: Seleccionar ciudad de Destino: SCL ('id', 'SCL')
+2025-11-02 17:09:17,931 - INFO - Input '2026-12-01' en: Campo Fecha Salida ('id', 'date-departure-input')
+2025-11-02 17:10:03,006 - ERROR - Fallo funcional en el Caso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff61170e8e5+80021]
+	GetHandleVerifier [0x0x7ff61170e940+80112]
+	(No symbol) [0x0x7ff61149060f]
+	(No symbol) [0x0x7ff6114e8854]
+	(No symbol) [0x0x7ff6114e8b1c]
+	(No symbol) [0x0x7ff61153c927]
+	(No symbol) [0x0x7ff61151126f]
+	(No symbol) [0x0x7ff61153968a]
+	(No symbol) [0x0x7ff611511003]
+	(No symbol) [0x0x7ff6114d95d1]
+	(No symbol) [0x0x7ff6114da3f3]
+	GetHandleVerifier [0x0x7ff6119cdc7d+2960429]
+	GetHandleVerifier [0x0x7ff6119c7f3a+2936554]
+	GetHandleVerifier [0x0x7ff6119e8977+3070247]
+	GetHandleVerifier [0x0x7ff6117283ce+185214]
+	GetHandleVerifier [0x0x7ff61172fe1f+216527]
+	GetHandleVerifier [0x0x7ff611717b24+117460]
+	GetHandleVerifier [0x0x7ff611717cdf+117903]
+	GetHandleVerifier [0x0x7ff6116fdbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+2025-11-02 17:10:03,519 - INFO - Resultado de 'test_oneway_MDE-SCL' insertado en la BD: FAIL
+2025-11-02 17:10:03,566 - INFO - Cerrando WebDriver.
+2025-11-02 17:10:05,903 - INFO - BrowserMob Proxy detenido.
+2025-11-02 17:10:05,909 - INFO - Conexión con 'test_results.db' cerrada.

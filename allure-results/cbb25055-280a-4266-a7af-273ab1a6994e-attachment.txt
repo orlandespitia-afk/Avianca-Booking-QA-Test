@@ -1,0 +1,28 @@
+2025-11-02 22:50:06,401 - INFO - Base de datos 'test_results.db' lista.
+2025-11-02 22:50:11,547 - INFO - BrowserMob Proxy iniciado con éxito.
+2025-11-02 22:50:16,654 - INFO - WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+2025-11-02 22:50:16,670 - ERROR - Fallo funcional en el Caso 1: Message: invalid argument: 'url' must be a string
+  (Session info: chrome=141.0.7390.123)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff745d3e8e5+80021]
+	GetHandleVerifier [0x0x7ff745d3e940+80112]
+	(No symbol) [0x0x7ff745ac060f]
+	(No symbol) [0x0x7ff745b6a544]
+	(No symbol) [0x0x7ff745b4122a]
+	(No symbol) [0x0x7ff745b6968a]
+	(No symbol) [0x0x7ff745b41003]
+	(No symbol) [0x0x7ff745b095d1]
+	(No symbol) [0x0x7ff745b0a3f3]
+	GetHandleVerifier [0x0x7ff745ffdc7d+2960429]
+	GetHandleVerifier [0x0x7ff745ff7f3a+2936554]
+	GetHandleVerifier [0x0x7ff746018977+3070247]
+	GetHandleVerifier [0x0x7ff745d583ce+185214]
+	GetHandleVerifier [0x0x7ff745d5fe1f+216527]
+	GetHandleVerifier [0x0x7ff745d47b24+117460]
+	GetHandleVerifier [0x0x7ff745d47cdf+117903]
+	GetHandleVerifier [0x0x7ff745d2dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+2025-11-02 22:50:16,675 - INFO - Resultado de 'test_oneway_BOG-CTG' insertado en la BD: FAIL
+2025-11-02 22:50:17,073 - INFO - Cerrando WebDriver.

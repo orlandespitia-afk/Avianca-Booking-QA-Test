@@ -1,0 +1,37 @@
+[32mINFO    [0m root:conftest.py:99 WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+[32mINFO    [0m root:home_page.py:45 Navegación inicial completada.
+[32mINFO    [0m root:base_page.py:28 Clic: Botón de Cierre de Pop-up Inicial ('xpath', "//button[@aria-label='Cerrar' or @class='close-button' or text()='Aceptar']")
+[32mINFO    [0m root:home_page.py:53 No se encontró el pop-up inicial. Continuamos.
+[32mINFO    [0m root:base_page.py:28 Clic: Radio Button Solo Ida ('xpath', "//span[text()='Solo ida']")
+[32mINFO    [0m root:base_page.py:28 Clic: Botón Origen (Abre Pop-up) ('id', 'originBtn')
+[32mINFO    [0m root:base_page.py:59 Input 'MDE' en: Campo Búsqueda Origen ('id', 'departureStationInputId')
+[32mINFO    [0m root:base_page.py:28 Clic: Seleccionar ciudad de Origen: MDE ('id', 'MDE')
+[32mINFO    [0m root:base_page.py:59 Input 'SCL' en: Campo Búsqueda Destino ('id', 'arrivalStationInputId')
+[32mINFO    [0m root:base_page.py:28 Clic: Seleccionar ciudad de Destino: SCL ('id', 'SCL')
+[32mINFO    [0m root:base_page.py:59 Input '2026-12-01' en: Campo Fecha Salida ('id', 'date-departure-input')
+[1m[31mERROR   [0m root:test_booking_oneway.py:49 Fallo funcional en el Caso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff73e66e8e5+80021]
+	GetHandleVerifier [0x0x7ff73e66e940+80112]
+	(No symbol) [0x0x7ff73e3f060f]
+	(No symbol) [0x0x7ff73e448854]
+	(No symbol) [0x0x7ff73e448b1c]
+	(No symbol) [0x0x7ff73e49c927]
+	(No symbol) [0x0x7ff73e47126f]
+	(No symbol) [0x0x7ff73e49968a]
+	(No symbol) [0x0x7ff73e471003]
+	(No symbol) [0x0x7ff73e4395d1]
+	(No symbol) [0x0x7ff73e43a3f3]
+	GetHandleVerifier [0x0x7ff73e92dc7d+2960429]
+	GetHandleVerifier [0x0x7ff73e927f3a+2936554]
+	GetHandleVerifier [0x0x7ff73e948977+3070247]
+	GetHandleVerifier [0x0x7ff73e6883ce+185214]
+	GetHandleVerifier [0x0x7ff73e68fe1f+216527]
+	GetHandleVerifier [0x0x7ff73e677b24+117460]
+	GetHandleVerifier [0x0x7ff73e677cdf+117903]
+	GetHandleVerifier [0x0x7ff73e65dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+[32mINFO    [0m root:conftest.py:103 Cerrando WebDriver.
+[32mINFO    [0m root:conftest.py:74 BrowserMob Proxy detenido.
+[32mINFO    [0m root:db_manager.py:51 Conexión con 'test_results.db' cerrada.

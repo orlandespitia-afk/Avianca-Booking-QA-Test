@@ -1,0 +1,6 @@
+[32mINFO    [0m root:conftest.py:99 WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+[1m[31mERROR   [0m root:test_booking_oneway.py:50 Fallo funcional en el Caso 1: 'HomePage' object has no attribute 'open'
+[32mINFO    [0m root:db_manager.py:47 Resultado de 'test_oneway_MDE-SCL' insertado en la BD: FAIL
+[32mINFO    [0m root:conftest.py:103 Cerrando WebDriver.
+[32mINFO    [0m root:conftest.py:74 BrowserMob Proxy detenido.
+[32mINFO    [0m root:db_manager.py:57 Conexión con 'test_results.db' cerrada.

@@ -1,0 +1,35 @@
+2025-11-02 16:22:18,769 - INFO - WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+2025-11-02 16:22:23,496 - INFO - Navegación inicial completada.
+2025-11-02 16:22:23,498 - INFO - Clic: Radio Button Solo Ida ('xpath', "//span[text()='Solo ida']")
+2025-11-02 16:22:24,966 - INFO - Clic: Botón Origen (Abre Pop-up) ('id', 'originBtn')
+2025-11-02 16:22:25,778 - INFO - Input 'MDE' en: Campo Búsqueda Origen ('id', 'departureStationInputId')
+2025-11-02 16:22:26,615 - INFO - Clic: Seleccionar ciudad de Origen: MDE ('id', 'MDE')
+2025-11-02 16:22:31,283 - INFO - Clic: Botón Destino (Abre Pop-up) ('id', 'destinationBtn')
+2025-11-02 16:23:16,364 - ERROR - Fallo funcional en el Caso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7a52ee8e5+80021]
+	GetHandleVerifier [0x0x7ff7a52ee940+80112]
+	(No symbol) [0x0x7ff7a507060f]
+	(No symbol) [0x0x7ff7a50c8854]
+	(No symbol) [0x0x7ff7a50c8b1c]
+	(No symbol) [0x0x7ff7a511c927]
+	(No symbol) [0x0x7ff7a50f126f]
+	(No symbol) [0x0x7ff7a511968a]
+	(No symbol) [0x0x7ff7a50f1003]
+	(No symbol) [0x0x7ff7a50b95d1]
+	(No symbol) [0x0x7ff7a50ba3f3]
+	GetHandleVerifier [0x0x7ff7a55adc7d+2960429]
+	GetHandleVerifier [0x0x7ff7a55a7f3a+2936554]
+	GetHandleVerifier [0x0x7ff7a55c8977+3070247]
+	GetHandleVerifier [0x0x7ff7a53083ce+185214]
+	GetHandleVerifier [0x0x7ff7a530fe1f+216527]
+	GetHandleVerifier [0x0x7ff7a52f7b24+117460]
+	GetHandleVerifier [0x0x7ff7a52f7cdf+117903]
+	GetHandleVerifier [0x0x7ff7a52ddbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+2025-11-02 16:23:16,894 - INFO - Resultado de 'test_oneway_MDE-SCL' insertado en la BD: FAIL
+2025-11-02 16:23:16,940 - INFO - Cerrando WebDriver.
+2025-11-02 16:23:19,339 - INFO - BrowserMob Proxy detenido.
+2025-11-02 16:23:19,355 - INFO - Conexión con 'test_results.db' cerrada.

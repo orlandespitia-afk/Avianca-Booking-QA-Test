@@ -1,0 +1,64 @@
+[32mINFO    [0m root:conftest.py:99 WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+[32mINFO    [0m root:home_page.py:50 Navegación inicial completada.
+[32mINFO    [0m root:base_page.py:28 Clic: Botón de Cierre de Pop-up Inicial ('xpath', "//button[@aria-label='Cerrar' or @class='close-button' or text()='Aceptar']")
+[32mINFO    [0m root:home_page.py:58 No se encontró el pop-up inicial. Continuamos.
+[32mINFO    [0m root:base_page.py:28 Clic: Radio Button Solo Ida ('xpath', "//span[text()='Solo ida']")
+[32mINFO    [0m root:base_page.py:28 Clic: Botón Origen (Abre Pop-up) ('id', 'originBtn')
+[32mINFO    [0m root:base_page.py:59 Input 'MDE' en: Campo Búsqueda Origen ('id', 'departureStationInputId')
+[32mINFO    [0m root:base_page.py:28 Clic: Seleccionar ciudad de Origen: MDE ('id', 'MDE')
+[32mINFO    [0m root:base_page.py:59 Input 'SCL' en: Campo Búsqueda Destino ('id', 'arrivalStationInputId')
+[32mINFO    [0m root:base_page.py:28 Clic: Seleccionar ciudad de Destino: SCL ('id', 'SCL')
+[31m[1mERROR   [0m root:home_page.py:114 Fallo JS al hacer clic en el campo de fecha: Message: javascript error: Cannot read properties of null (reading 'click')
+  (Session info: chrome=141.0.7390.123)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff72543e8e5+80021]
+	GetHandleVerifier [0x0x7ff72543e940+80112]
+	(No symbol) [0x0x7ff7251c060f]
+	(No symbol) [0x0x7ff7251c816a]
+	(No symbol) [0x0x7ff7251cb5b2]
+	(No symbol) [0x0x7ff72526aa1b]
+	(No symbol) [0x0x7ff72524122a]
+	(No symbol) [0x0x7ff72526968a]
+	(No symbol) [0x0x7ff725241003]
+	(No symbol) [0x0x7ff7252095d1]
+	(No symbol) [0x0x7ff72520a3f3]
+	GetHandleVerifier [0x0x7ff7256fdc7d+2960429]
+	GetHandleVerifier [0x0x7ff7256f7f3a+2936554]
+	GetHandleVerifier [0x0x7ff725718977+3070247]
+	GetHandleVerifier [0x0x7ff7254583ce+185214]
+	GetHandleVerifier [0x0x7ff72545fe1f+216527]
+	GetHandleVerifier [0x0x7ff725447b24+117460]
+	GetHandleVerifier [0x0x7ff725447cdf+117903]
+	GetHandleVerifier [0x0x7ff72542dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+[31m[1mERROR   [0m root:test_booking_oneway.py:50 Fallo funcional en el Caso 1: Message: javascript error: Cannot read properties of null (reading 'click')
+  (Session info: chrome=141.0.7390.123)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff72543e8e5+80021]
+	GetHandleVerifier [0x0x7ff72543e940+80112]
+	(No symbol) [0x0x7ff7251c060f]
+	(No symbol) [0x0x7ff7251c816a]
+	(No symbol) [0x0x7ff7251cb5b2]
+	(No symbol) [0x0x7ff72526aa1b]
+	(No symbol) [0x0x7ff72524122a]
+	(No symbol) [0x0x7ff72526968a]
+	(No symbol) [0x0x7ff725241003]
+	(No symbol) [0x0x7ff7252095d1]
+	(No symbol) [0x0x7ff72520a3f3]
+	GetHandleVerifier [0x0x7ff7256fdc7d+2960429]
+	GetHandleVerifier [0x0x7ff7256f7f3a+2936554]
+	GetHandleVerifier [0x0x7ff725718977+3070247]
+	GetHandleVerifier [0x0x7ff7254583ce+185214]
+	GetHandleVerifier [0x0x7ff72545fe1f+216527]
+	GetHandleVerifier [0x0x7ff725447b24+117460]
+	GetHandleVerifier [0x0x7ff725447cdf+117903]
+	GetHandleVerifier [0x0x7ff72542dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+[32mINFO    [0m root:db_manager.py:47 Resultado de 'test_oneway_MDE-SCL' insertado en la BD: FAIL
+[32mINFO    [0m root:conftest.py:103 Cerrando WebDriver.
+[32mINFO    [0m root:conftest.py:74 BrowserMob Proxy detenido.
+[32mINFO    [0m root:db_manager.py:57 Conexión con 'test_results.db' cerrada.

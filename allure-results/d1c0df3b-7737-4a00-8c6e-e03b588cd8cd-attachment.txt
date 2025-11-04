@@ -1,0 +1,33 @@
+[32mINFO    [0m root:conftest.py:99 WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+[32mINFO    [0m root:home_page.py:45 Navegación inicial completada.
+[32mINFO    [0m root:base_page.py:29 Clic: Radio Button Solo Ida ('xpath', "//span[text()='Solo ida']")
+[32mINFO    [0m root:base_page.py:29 Clic: Botón Origen (Abre Pop-up) ('id', 'originBtn')
+[32mINFO    [0m root:base_page.py:46 Input 'BOG' en: Campo Búsqueda Origen ('id', 'departureStationInputId')
+[32mINFO    [0m root:base_page.py:29 Clic: Seleccionar ciudad de Origen: BOG ('id', 'BOG')
+[32mINFO    [0m root:base_page.py:29 Clic: Botón Destino (Abre Pop-up) ('id', 'destinationBtn')
+[1m[31mERROR   [0m root:test_booking_oneway.py:60 Fallo funcional en el Caso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff70e37e8e5+80021]
+	GetHandleVerifier [0x0x7ff70e37e940+80112]
+	(No symbol) [0x0x7ff70e10060f]
+	(No symbol) [0x0x7ff70e158854]
+	(No symbol) [0x0x7ff70e158b1c]
+	(No symbol) [0x0x7ff70e1ac927]
+	(No symbol) [0x0x7ff70e18126f]
+	(No symbol) [0x0x7ff70e1a968a]
+	(No symbol) [0x0x7ff70e181003]
+	(No symbol) [0x0x7ff70e1495d1]
+	(No symbol) [0x0x7ff70e14a3f3]
+	GetHandleVerifier [0x0x7ff70e63dc7d+2960429]
+	GetHandleVerifier [0x0x7ff70e637f3a+2936554]
+	GetHandleVerifier [0x0x7ff70e658977+3070247]
+	GetHandleVerifier [0x0x7ff70e3983ce+185214]
+	GetHandleVerifier [0x0x7ff70e39fe1f+216527]
+	GetHandleVerifier [0x0x7ff70e387b24+117460]
+	GetHandleVerifier [0x0x7ff70e387cdf+117903]
+	GetHandleVerifier [0x0x7ff70e36dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+[32mINFO    [0m root:db_manager.py:43 Resultado de 'test_oneway_BOG-CTG' insertado en la BD: FAIL
+[32mINFO    [0m root:conftest.py:103 Cerrando WebDriver.

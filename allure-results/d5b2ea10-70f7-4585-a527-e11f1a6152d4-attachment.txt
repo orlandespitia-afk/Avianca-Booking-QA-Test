@@ -1,0 +1,37 @@
+2025-11-02 16:50:15,821 - INFO - WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+2025-11-02 16:50:19,610 - INFO - Navegación inicial completada.
+2025-11-02 16:50:19,611 - INFO - Clic: Botón de Cierre de Pop-up Inicial ('xpath', "//button[@aria-label='Cerrar' or @class='close-button' or text()='Aceptar']")
+2025-11-02 16:51:04,683 - INFO - No se encontró el pop-up inicial. Continuamos.
+2025-11-02 16:51:04,683 - INFO - Clic: Radio Button Solo Ida ('xpath', "//span[text()='Solo ida']")
+2025-11-02 16:51:05,598 - INFO - Clic: Botón Origen (Abre Pop-up) ('id', 'originBtn')
+2025-11-02 16:51:06,431 - INFO - Input 'MDE' en: Campo Búsqueda Origen ('id', 'departureStationInputId')
+2025-11-02 16:51:07,208 - INFO - Clic: Seleccionar ciudad de Origen: MDE ('id', 'MDE')
+2025-11-02 16:51:15,769 - INFO - Input 'SCL' en: Campo Búsqueda Destino ('id', 'arrivalStationInputId')
+2025-11-02 16:51:16,482 - INFO - Clic: Seleccionar ciudad de Destino: SCL ('id', 'SCL')
+2025-11-02 16:51:18,752 - INFO - Input '2026-12-01' en: Campo Fecha Salida ('id', 'date-departure-input')
+2025-11-02 16:52:03,787 - ERROR - Fallo funcional en el Caso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff71ac1e8e5+80021]
+	GetHandleVerifier [0x0x7ff71ac1e940+80112]
+	(No symbol) [0x0x7ff71a9a060f]
+	(No symbol) [0x0x7ff71a9f8854]
+	(No symbol) [0x0x7ff71a9f8b1c]
+	(No symbol) [0x0x7ff71aa4c927]
+	(No symbol) [0x0x7ff71aa2126f]
+	(No symbol) [0x0x7ff71aa4968a]
+	(No symbol) [0x0x7ff71aa21003]
+	(No symbol) [0x0x7ff71a9e95d1]
+	(No symbol) [0x0x7ff71a9ea3f3]
+	GetHandleVerifier [0x0x7ff71aeddc7d+2960429]
+	GetHandleVerifier [0x0x7ff71aed7f3a+2936554]
+	GetHandleVerifier [0x0x7ff71aef8977+3070247]
+	GetHandleVerifier [0x0x7ff71ac383ce+185214]
+	GetHandleVerifier [0x0x7ff71ac3fe1f+216527]
+	GetHandleVerifier [0x0x7ff71ac27b24+117460]
+	GetHandleVerifier [0x0x7ff71ac27cdf+117903]
+	GetHandleVerifier [0x0x7ff71ac0dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+2025-11-02 16:52:03,837 - INFO - Resultado de 'test_oneway_MDE-SCL' insertado en la BD: FAIL
+2025-11-02 16:52:03,873 - INFO - Cerrando WebDriver.

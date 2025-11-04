@@ -1,0 +1,6 @@
+2025-11-02 22:00:38,607 - INFO - WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+2025-11-02 22:00:38,609 - ERROR - Fallo funcional en el Caso 1: 'HomePage' object has no attribute 'open'
+2025-11-02 22:00:38,614 - INFO - Resultado de 'test_oneway_MDE-SCL' insertado en la BD: FAIL
+2025-11-02 22:00:38,630 - INFO - Cerrando WebDriver.
+2025-11-02 22:00:40,970 - INFO - BrowserMob Proxy detenido.
+2025-11-02 22:00:40,977 - INFO - Conexión con 'test_results.db' cerrada.

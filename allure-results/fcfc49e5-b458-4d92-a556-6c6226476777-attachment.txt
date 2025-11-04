@@ -1,0 +1,15 @@
+2025-11-02 15:17:58,496 - INFO - Base de datos 'test_results.db' lista.
+2025-11-02 15:18:03,153 - INFO - BrowserMob Proxy iniciado con éxito.
+2025-11-02 15:18:08,663 - INFO - WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+2025-11-02 15:18:16,701 - INFO - Navegación inicial completada.
+2025-11-02 15:18:16,701 - INFO - Clic: Botón de Cierre de Pop-up Inicial ('xpath', "//button[@aria-label='Cerrar' or @class='close-button' or text()='Aceptar']")
+2025-11-02 15:19:01,835 - INFO - No se encontró el pop-up inicial. Continuamos.
+2025-11-02 15:19:01,839 - INFO - Clic: Radio Button Solo Ida ('xpath', "//span[text()='Solo ida']")
+2025-11-02 15:19:02,792 - INFO - Clic: Botón Origen (Abre Pop-up) ('id', 'originBtn')
+2025-11-02 15:19:03,608 - INFO - Input 'BOG' en: Campo Búsqueda Origen ('id', 'departureStationInputId')
+2025-11-02 15:19:04,448 - INFO - Clic: Seleccionar primer resultado de Origen ('xpath', "//ul[@role='listbox']/li[1]")
+2025-11-02 15:19:06,343 - INFO - Input 'CTG' en: Campo Búsqueda Destino ('id', 'departureStationInputId')
+2025-11-02 15:19:51,549 - ERROR - Fallo funcional en el Caso 1: Message: 
+
+2025-11-02 15:19:51,590 - INFO - Resultado de 'test_oneway_BOG-CTG' insertado en la BD: FAIL
+2025-11-02 15:19:53,186 - INFO - Cerrando WebDriver.

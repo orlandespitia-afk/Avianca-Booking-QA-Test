@@ -1,0 +1,8 @@
+2025-11-02 12:00:01,251 - INFO - WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+2025-11-02 12:00:05,455 - INFO - Navegación inicial completada.
+2025-11-02 12:00:05,455 - INFO - Clic: Radio Button Solo Ida ('id', 'journeytypeId_1')
+2025-11-02 12:00:05,472 - ERROR - Fallo funcional en el Caso 1: 'HomePage' object has no attribute '_wait_for_element'
+2025-11-02 12:00:06,349 - INFO - Resultado de 'test_oneway_MDE-SCL' insertado en la BD: FAIL
+2025-11-02 12:00:06,385 - INFO - Cerrando WebDriver.
+2025-11-02 12:00:08,761 - INFO - Conexión con 'test_results.db' cerrada.
+2025-11-02 12:00:08,769 - INFO - BrowserMob Proxy detenido.

@@ -1,0 +1,8 @@
+[32mINFO    [0m root:conftest.py:61 BrowserMob Proxy iniciado con éxito.
+[32mINFO    [0m root:db_manager.py:30 Base de datos 'test_results.db' lista.
+[32mINFO    [0m root:conftest.py:101 WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/.
+[32mINFO    [0m root:base_page.py:31 Input 'fr' en: Selector de Idioma: fr ('id', 'language-selector')
+[32mINFO    [0m root:db_manager.py:43 Resultado de 'test_login_capture_session' insertado en la BD: FAIL
+[32mINFO    [0m root:conftest.py:105 Cerrando WebDriver.
+[32mINFO    [0m root:db_manager.py:51 Conexión con 'test_results.db' cerrada.
+[32mINFO    [0m root:conftest.py:74 BrowserMob Proxy detenido.

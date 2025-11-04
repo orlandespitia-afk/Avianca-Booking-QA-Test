@@ -1,0 +1,1 @@
+[32mINFO    [0m root:db_manager.py:57 Conexión con 'test_results.db' cerrada.

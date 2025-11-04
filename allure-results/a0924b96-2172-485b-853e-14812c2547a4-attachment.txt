@@ -1,0 +1,8 @@
+[32mINFO    [0m root:conftest.py:61 BrowserMob Proxy iniciado con éxito.
+[32mINFO    [0m root:db_manager.py:30 Base de datos 'test_results.db' lista.
+[32mINFO    [0m root:conftest.py:103 WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/.
+[32mINFO    [0m root:home_page.py:28 Navegación inicial completada.
+[1m[31mERROR   [0m root:test_login_and_capture.py:69 Fallo en la ejecución, registrando en DB. Error: FALLO: No se encontró el evento 'Session' con data válida.
+assert {}
+[32mINFO    [0m root:db_manager.py:43 Resultado de 'test_login_capture_session' insertado en la BD: FAIL
+[32mINFO    [0m root:conftest.py:107 Cerrando WebDriver.

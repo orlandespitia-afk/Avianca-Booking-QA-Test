@@ -1,0 +1,7 @@
+2025-11-02 04:12:12,530 - INFO - BrowserMob Proxy iniciado con éxito.
+2025-11-02 04:12:12,544 - INFO - Base de datos 'test_results.db' lista.
+2025-11-02 04:12:27,546 - INFO - WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/.
+2025-11-02 04:12:31,102 - INFO - Input 'fr' en: Selector de Idioma: fr ('id', 'language-selector')
+2025-11-02 04:12:35,999 - INFO - Resultado de 'test_login_capture_session' insertado en la BD: FAIL
+2025-11-02 04:12:36,620 - INFO - Cerrando WebDriver.
+2025-11-02 04:12:38,752 - INFO - Conexión con 'test_results.db' cerrada.

@@ -1,0 +1,6 @@
+2025-11-02 22:00:24,899 - INFO - Base de datos 'test_results.db' lista.
+2025-11-02 22:00:30,259 - INFO - BrowserMob Proxy iniciado con éxito.
+2025-11-02 22:00:33,187 - INFO - WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+2025-11-02 22:00:33,194 - ERROR - Fallo funcional en el Caso 1: 'HomePage' object has no attribute 'open'
+2025-11-02 22:00:33,199 - INFO - Resultado de 'test_oneway_BOG-CTG' insertado en la BD: FAIL
+2025-11-02 22:00:33,488 - INFO - Cerrando WebDriver.

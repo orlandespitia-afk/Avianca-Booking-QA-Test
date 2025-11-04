@@ -1,0 +1,6 @@
+2025-11-03 00:15:21,933 - INFO - Base de datos 'test_results.db' lista.
+2025-11-03 00:15:28,513 - INFO - BrowserMob Proxy iniciado con éxito.
+2025-11-03 00:15:31,994 - INFO - WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+2025-11-03 00:15:40,593 - INFO - Esperando resultados para BOG a AUC...
+2025-11-03 00:16:25,640 - ERROR - Timeout esperando el elemento con locator ('xpath', "//h1[contains(text(), 'Selecciona tu vuelo') or contains(text(), 'Selección de Vuelo')]")
+2025-11-03 00:16:26,070 - INFO - Cerrando WebDriver.

@@ -1,0 +1,15 @@
+[32mINFO    [0m root:db_manager.py:30 Base de datos 'test_results.db' lista.
+[32mINFO    [0m root:conftest.py:61 BrowserMob Proxy iniciado con éxito.
+[32mINFO    [0m root:conftest.py:99 WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+[32mINFO    [0m root:home_page.py:48 Navegación inicial completada.
+[32mINFO    [0m root:base_page.py:29 Clic: Botón de Cierre de Pop-up Inicial ('xpath', "//button[@aria-label='Cerrar' or @class='close-button' or text()='Aceptar']")
+[32mINFO    [0m root:home_page.py:56 No se encontró el pop-up inicial. Continuamos.
+[32mINFO    [0m root:base_page.py:29 Clic: Radio Button Solo Ida ('xpath', "//span[text()='Solo ida']")
+[32mINFO    [0m root:base_page.py:29 Clic: Botón Origen (Abre Pop-up) ('id', 'originBtn')
+[32mINFO    [0m root:base_page.py:46 Input 'BOG' en: Campo Búsqueda Origen ('id', 'departureStationInputId')
+[32mINFO    [0m root:base_page.py:29 Clic: Seleccionar primer resultado de Origen ('xpath', "//ul[@role='listbox']/li[1]")
+[32mINFO    [0m root:base_page.py:46 Input 'CTG' en: Campo Búsqueda Destino ('id', 'departureStationInputId')
+[1m[31mERROR   [0m root:test_login_and_capture.py:50 Fallo funcional en el Caso 1: Message: 
+
+[32mINFO    [0m root:db_manager.py:43 Resultado de 'test_oneway_BOG-CTG' insertado en la BD: FAIL
+[32mINFO    [0m root:conftest.py:103 Cerrando WebDriver.

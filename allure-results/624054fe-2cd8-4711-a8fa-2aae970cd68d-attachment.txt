@@ -1,0 +1,62 @@
+[32mINFO    [0m root:db_manager.py:14 Base de datos 'test_results.db' lista.
+[32mINFO    [0m root:conftest.py:61 BrowserMob Proxy iniciado con éxito.
+[32mINFO    [0m root:conftest.py:99 WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+[32mINFO    [0m root:home_page.py:50 Navegación inicial completada.
+[32mINFO    [0m root:base_page.py:28 Clic: Botón de Cierre de Pop-up Inicial ('xpath', "//button[@aria-label='Cerrar' or @class='close-button' or text()='Aceptar']")
+[32mINFO    [0m root:home_page.py:58 No se encontró el pop-up inicial. Continuamos.
+[32mINFO    [0m root:base_page.py:28 Clic: Radio Button Solo Ida ('xpath', "//span[text()='Solo ida']")
+[32mINFO    [0m root:base_page.py:28 Clic: Botón Origen (Abre Pop-up) ('id', 'originBtn')
+[32mINFO    [0m root:base_page.py:59 Input 'BOG' en: Campo Búsqueda Origen ('id', 'departureStationInputId')
+[32mINFO    [0m root:base_page.py:28 Clic: Seleccionar ciudad de Origen: BOG ('id', 'BOG')
+[32mINFO    [0m root:base_page.py:59 Input 'CTG' en: Campo Búsqueda Destino ('id', 'arrivalStationInputId')
+[32mINFO    [0m root:base_page.py:28 Clic: Seleccionar ciudad de Destino: CTG ('id', 'CTG')
+[31m[1mERROR   [0m root:home_page.py:120 Fallo ROBUSTO al abrir calendario: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff75b9ce8e5+80021]
+	GetHandleVerifier [0x0x7ff75b9ce940+80112]
+	(No symbol) [0x0x7ff75b75060f]
+	(No symbol) [0x0x7ff75b7a8854]
+	(No symbol) [0x0x7ff75b7a8b1c]
+	(No symbol) [0x0x7ff75b7fc927]
+	(No symbol) [0x0x7ff75b7d126f]
+	(No symbol) [0x0x7ff75b7f968a]
+	(No symbol) [0x0x7ff75b7d1003]
+	(No symbol) [0x0x7ff75b7995d1]
+	(No symbol) [0x0x7ff75b79a3f3]
+	GetHandleVerifier [0x0x7ff75bc8dc7d+2960429]
+	GetHandleVerifier [0x0x7ff75bc87f3a+2936554]
+	GetHandleVerifier [0x0x7ff75bca8977+3070247]
+	GetHandleVerifier [0x0x7ff75b9e83ce+185214]
+	GetHandleVerifier [0x0x7ff75b9efe1f+216527]
+	GetHandleVerifier [0x0x7ff75b9d7b24+117460]
+	GetHandleVerifier [0x0x7ff75b9d7cdf+117903]
+	GetHandleVerifier [0x0x7ff75b9bdbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+[31m[1mERROR   [0m root:test_booking_oneway.py:50 Fallo funcional en el Caso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff75b9ce8e5+80021]
+	GetHandleVerifier [0x0x7ff75b9ce940+80112]
+	(No symbol) [0x0x7ff75b75060f]
+	(No symbol) [0x0x7ff75b7a8854]
+	(No symbol) [0x0x7ff75b7a8b1c]
+	(No symbol) [0x0x7ff75b7fc927]
+	(No symbol) [0x0x7ff75b7d126f]
+	(No symbol) [0x0x7ff75b7f968a]
+	(No symbol) [0x0x7ff75b7d1003]
+	(No symbol) [0x0x7ff75b7995d1]
+	(No symbol) [0x0x7ff75b79a3f3]
+	GetHandleVerifier [0x0x7ff75bc8dc7d+2960429]
+	GetHandleVerifier [0x0x7ff75bc87f3a+2936554]
+	GetHandleVerifier [0x0x7ff75bca8977+3070247]
+	GetHandleVerifier [0x0x7ff75b9e83ce+185214]
+	GetHandleVerifier [0x0x7ff75b9efe1f+216527]
+	GetHandleVerifier [0x0x7ff75b9d7b24+117460]
+	GetHandleVerifier [0x0x7ff75b9d7cdf+117903]
+	GetHandleVerifier [0x0x7ff75b9bdbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+[32mINFO    [0m root:db_manager.py:47 Resultado de 'test_oneway_BOG-CTG' insertado en la BD: FAIL
+[32mINFO    [0m root:conftest.py:103 Cerrando WebDriver.

@@ -1,0 +1,140 @@
+2025-11-02 23:46:09,483 - INFO - WebDriver inicializado para chrome en https://nuxqa4.avtest.ink/ (SIN PROXY).
+2025-11-02 23:46:13,662 - INFO - Navegación inicial completada.
+2025-11-02 23:46:58,766 - ERROR - Timeout esperando el elemento con locator ('xpath', "//button[@aria-label='Cerrar' or @class='close-button' or text()='Aceptar']")
+2025-11-02 23:46:58,766 - ERROR - Fallo al hacer clic en Botón de Cierre de Pop-up Inicial ('xpath', "//button[@aria-label='Cerrar' or @class='close-button' or text()='Aceptar']"): Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff71e1ee8e5+80021]
+	GetHandleVerifier [0x0x7ff71e1ee940+80112]
+	(No symbol) [0x0x7ff71df7060f]
+	(No symbol) [0x0x7ff71dfc8854]
+	(No symbol) [0x0x7ff71dfc8b1c]
+	(No symbol) [0x0x7ff71e01c927]
+	(No symbol) [0x0x7ff71dff126f]
+	(No symbol) [0x0x7ff71e01968a]
+	(No symbol) [0x0x7ff71dff1003]
+	(No symbol) [0x0x7ff71dfb95d1]
+	(No symbol) [0x0x7ff71dfba3f3]
+	GetHandleVerifier [0x0x7ff71e4adc7d+2960429]
+	GetHandleVerifier [0x0x7ff71e4a7f3a+2936554]
+	GetHandleVerifier [0x0x7ff71e4c8977+3070247]
+	GetHandleVerifier [0x0x7ff71e2083ce+185214]
+	GetHandleVerifier [0x0x7ff71e20fe1f+216527]
+	GetHandleVerifier [0x0x7ff71e1f7b24+117460]
+	GetHandleVerifier [0x0x7ff71e1f7cdf+117903]
+	GetHandleVerifier [0x0x7ff71e1ddbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+2025-11-02 23:46:58,807 - INFO - No se encontró el pop-up inicial. Continuamos.
+2025-11-02 23:46:59,272 - INFO - Clic: Radio Button Solo Ida ('xpath', "//span[text()='Solo ida']")
+2025-11-02 23:46:59,548 - INFO - Clic: Botón Origen (Abre Pop-up) ('id', 'originBtn')
+2025-11-02 23:47:00,094 - INFO - Input 'MDE' en: Campo Búsqueda Origen ('id', 'departureStationInputId')
+2025-11-02 23:47:01,148 - INFO - Clic: Seleccionar ciudad de Origen: MDE ('id', 'MDE')
+2025-11-02 23:47:04,856 - INFO - Input 'SCL' en: Campo Búsqueda Destino ('id', 'arrivalStationInputId')
+2025-11-02 23:47:05,148 - INFO - Clic: Seleccionar ciudad de Destino: SCL ('id', 'SCL')
+2025-11-02 23:47:09,174 - WARNING - ADVERTENCIA: Fallo al inyectar la fecha (elemento no existe), continuando: Message: javascript error: Cannot set properties of null (setting 'value')
+  (Session info: chrome=141.0.7390.123)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff71e1ee8e5+80021]
+	GetHandleVerifier [0x0x7ff71e1ee940+80112]
+	(No symbol) [0x0x7ff71df7060f]
+	(No symbol) [0x0x7ff71df7816a]
+	(No symbol) [0x0x7ff71df7b5b2]
+	(No symbol) [0x0x7ff71e01aa1b]
+	(No symbol) [0x0x7ff71dff122a]
+	(No symbol) [0x0x7ff71e01968a]
+	(No symbol) [0x0x7ff71dff1003]
+	(No symbol) [0x0x7ff71dfb95d1]
+	(No symbol) [0x0x7ff71dfba3f3]
+	GetHandleVerifier [0x0x7ff71e4adc7d+2960429]
+	GetHandleVerifier [0x0x7ff71e4a7f3a+2936554]
+	GetHandleVerifier [0x0x7ff71e4c8977+3070247]
+	GetHandleVerifier [0x0x7ff71e2083ce+185214]
+	GetHandleVerifier [0x0x7ff71e20fe1f+216527]
+	GetHandleVerifier [0x0x7ff71e1f7b24+117460]
+	GetHandleVerifier [0x0x7ff71e1f7cdf+117903]
+	GetHandleVerifier [0x0x7ff71e1ddbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+2025-11-02 23:47:24,199 - WARNING - ADVERTENCIA: Fallo al inyectar adultos (elemento no existe), continuando: Message: javascript error: Cannot set properties of null (setting 'value')
+  (Session info: chrome=141.0.7390.123)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff71e1ee8e5+80021]
+	GetHandleVerifier [0x0x7ff71e1ee940+80112]
+	(No symbol) [0x0x7ff71df7060f]
+	(No symbol) [0x0x7ff71df7816a]
+	(No symbol) [0x0x7ff71df7b5b2]
+	(No symbol) [0x0x7ff71e01aa1b]
+	(No symbol) [0x0x7ff71dff122a]
+	(No symbol) [0x0x7ff71e01968a]
+	(No symbol) [0x0x7ff71dff1003]
+	(No symbol) [0x0x7ff71dfb95d1]
+	(No symbol) [0x0x7ff71dfba3f3]
+	GetHandleVerifier [0x0x7ff71e4adc7d+2960429]
+	GetHandleVerifier [0x0x7ff71e4a7f3a+2936554]
+	GetHandleVerifier [0x0x7ff71e4c8977+3070247]
+	GetHandleVerifier [0x0x7ff71e2083ce+185214]
+	GetHandleVerifier [0x0x7ff71e20fe1f+216527]
+	GetHandleVerifier [0x0x7ff71e1f7b24+117460]
+	GetHandleVerifier [0x0x7ff71e1f7cdf+117903]
+	GetHandleVerifier [0x0x7ff71e1ddbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+2025-11-02 23:47:24,210 - WARNING - ADVERTENCIA: Fallo al inyectar infantes (elemento no existe), continuando: Message: javascript error: Cannot set properties of null (setting 'value')
+  (Session info: chrome=141.0.7390.123)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff71e1ee8e5+80021]
+	GetHandleVerifier [0x0x7ff71e1ee940+80112]
+	(No symbol) [0x0x7ff71df7060f]
+	(No symbol) [0x0x7ff71df7816a]
+	(No symbol) [0x0x7ff71df7b5b2]
+	(No symbol) [0x0x7ff71e01aa1b]
+	(No symbol) [0x0x7ff71dff122a]
+	(No symbol) [0x0x7ff71e01968a]
+	(No symbol) [0x0x7ff71dff1003]
+	(No symbol) [0x0x7ff71dfb95d1]
+	(No symbol) [0x0x7ff71dfba3f3]
+	GetHandleVerifier [0x0x7ff71e4adc7d+2960429]
+	GetHandleVerifier [0x0x7ff71e4a7f3a+2936554]
+	GetHandleVerifier [0x0x7ff71e4c8977+3070247]
+	GetHandleVerifier [0x0x7ff71e2083ce+185214]
+	GetHandleVerifier [0x0x7ff71e20fe1f+216527]
+	GetHandleVerifier [0x0x7ff71e1f7b24+117460]
+	GetHandleVerifier [0x0x7ff71e1f7cdf+117903]
+	GetHandleVerifier [0x0x7ff71e1ddbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+2025-11-02 23:47:26,886 - INFO - Clic FORZADO (JS) en Botón Buscar Vuelos.
+2025-11-02 23:47:31,913 - INFO - Esperando resultados para MDE a SCL...
+2025-11-02 23:48:16,920 - ERROR - Timeout esperando el elemento con locator ('xpath', "//h1[contains(text(), 'Selecciona tu vuelo') or contains(text(), 'Selección de Vuelo')]")
+2025-11-02 23:48:16,976 - ERROR - Fallo funcional en el Caso 1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff71e1ee8e5+80021]
+	GetHandleVerifier [0x0x7ff71e1ee940+80112]
+	(No symbol) [0x0x7ff71df7060f]
+	(No symbol) [0x0x7ff71dfc8854]
+	(No symbol) [0x0x7ff71dfc8b1c]
+	(No symbol) [0x0x7ff71e01c927]
+	(No symbol) [0x0x7ff71dff126f]
+	(No symbol) [0x0x7ff71e01968a]
+	(No symbol) [0x0x7ff71dff1003]
+	(No symbol) [0x0x7ff71dfb95d1]
+	(No symbol) [0x0x7ff71dfba3f3]
+	GetHandleVerifier [0x0x7ff71e4adc7d+2960429]
+	GetHandleVerifier [0x0x7ff71e4a7f3a+2936554]
+	GetHandleVerifier [0x0x7ff71e4c8977+3070247]
+	GetHandleVerifier [0x0x7ff71e2083ce+185214]
+	GetHandleVerifier [0x0x7ff71e20fe1f+216527]
+	GetHandleVerifier [0x0x7ff71e1f7b24+117460]
+	GetHandleVerifier [0x0x7ff71e1f7cdf+117903]
+	GetHandleVerifier [0x0x7ff71e1ddbb8+11112]
+	BaseThreadInitThunk [0x0x7ffc92b1259d+29]
+	RtlUserThreadStart [0x0x7ffc93c0af78+40]
+
+2025-11-02 23:48:16,987 - INFO - Resultado de 'test_oneway_MDE-SCL' insertado en la BD: FAIL
+2025-11-02 23:48:17,084 - INFO - Cerrando WebDriver.
+2025-11-02 23:48:19,548 - INFO - BrowserMob Proxy detenido.
+2025-11-02 23:48:19,553 - INFO - Conexión con 'test_results.db' cerrada.
